@@ -53,7 +53,7 @@ task :package do
   zipfile_name = "#{RVACars::NAME}.zip"
   puts "Packaging into #{zipfile_name} ..."
 
-  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb]
+  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md]
   zf = ZipFileGenerator.new('.', zipfile_name, exclude)
   zf.write
 
