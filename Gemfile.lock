@@ -1,13 +1,20 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    digest (3.1.0)
     rake (13.0.6)
+    rubyzip (2.3.2)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  digest (~> 3.1)
   rake (~> 13.0, >= 13.0.6)
+  rubyzip (~> 2.3, >= 2.3.2)
+
+RUBY VERSION
+   ruby 2.7.3p183
 
 BUNDLED WITH
    2.2.26
