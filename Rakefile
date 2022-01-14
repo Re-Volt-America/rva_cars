@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'zip'
 require 'digest'
 require_relative 'data'
