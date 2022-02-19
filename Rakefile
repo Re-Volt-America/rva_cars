@@ -7,6 +7,7 @@ require_relative 'data'
 task default: %i[clean package version]
 
 task :clean do
+  File.delete("#{RVACars::NAME}.zip") if File.exist?("#{RVACars::NAME}.zip")
   deleted_bytes = 0.0.to_f
 
   # Remove unnecessary directories
@@ -34,8 +35,9 @@ task :clean do
 
   # Remove unnecessary files
   delete_ext = %w[.psd .pdn .xcf]
+  delete_file = %w[preview.jpg preview.png carbox256.bmp carbox512.bmp]
   Dir[File.join('cars', '**', '*')].reject { |p| File.directory? p }.each do |f|
-    next unless delete_ext.include? File.extname(f)
+    next unless delete_ext.include?(File.extname(f)) || delete_file.any? { |df| f.include? df }
 
     deleted_bytes += File.size(f).to_f
     puts("Removing #{f} (#{bytes_to_mb(File.size(f))} MB) ...")
