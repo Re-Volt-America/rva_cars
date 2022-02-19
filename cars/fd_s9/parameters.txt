@@ -54,7 +54,7 @@ TPAGE 		"cars/fd_s9/car.bmp"
 ;)TSHADOW 	"cars/fd_s9/shadow.bmp"
 ;)SHADOWINDEX 	-1 			; Use a default shadow (0 to 27 or -1)
 ;)SHADOWTABLE 	-47.000000 47.099998 91.199997 -87.300003 -5.600000 	; Left, right, front, back, height (relative to model center)
-;)SFXENGINE 	"wavs/market/cabnhum2.wav"
+;)SFXENGINE 	"cars/fd_s9/cabnhum2.wav"
 EnvRGB 		200 200 200
 
 ;====================

@@ -66,9 +66,9 @@ EnvRGB 		200 200 200
 SteerRate  	4.500000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.800000 			;
 EngineRate 	5.000000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	43.500000 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	45.000000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	8.000000 			; Down force modifier when car on floor
-CoM        	0.000000 -4.000000 0.000000 	; Centre of mass relative to model centre
+CoM        	0.000000 -5.000000 0.000000 	; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
 ;)Flippable	false 		; Rotor car effect
 ;)Flying   	false 		; Flying like the UFO car
@@ -129,8 +129,8 @@ MaxPos      	15.000000
 SkidWidth   	13.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.040000
-Grip            0.045000
+AxleFriction    0.020000
+Grip            0.025000
 StaticFriction  2.400000
 KineticFriction 2.050000
 }          	; End Wheel
@@ -151,8 +151,8 @@ MaxPos      	15.000000
 SkidWidth   	13.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.040000
-Grip            0.045000
+AxleFriction    0.020000
+Grip            0.025000
 StaticFriction  2.400000
 KineticFriction 2.050000
 }          	; End Wheel
