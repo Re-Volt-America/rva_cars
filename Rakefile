@@ -34,7 +34,7 @@ task :clean do
   end
 
   # Remove unnecessary files
-  delete_ext = %w[.psd .pdn .xcf]
+  delete_ext = %w[.psd .pdn .xcf .zip .rar .tar .7z]
   delete_file = %w[preview.jpg preview.png carbox256.bmp carbox512.bmp]
   Dir[File.join('cars', '**', '*')].reject { |p| File.directory? p }.each do |f|
     next unless delete_ext.include?(File.extname(f)) || delete_file.any? { |df| f.include? df }
