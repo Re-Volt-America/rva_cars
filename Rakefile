@@ -7,7 +7,6 @@ require_relative 'data'
 task default: %i[clean package version]
 
 task :clean do
-  File.delete("#{RVACars::NAME}.zip") if File.exist?("#{RVACars::NAME}.zip")
   deleted_bytes = 0.0.to_f
 
   # Remove unnecessary directories
@@ -55,9 +54,11 @@ end
 
 task :package do
   zipfile_name = "#{RVACars::NAME}.zip"
+  File.delete(zipfile_name) if File.exist?(zipfile_name)
+
   puts "Packaging into #{zipfile_name} ..."
 
-  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md]
+  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md packages.json]
   zf = ZipFileGenerator.new('.', zipfile_name, exclude)
   zf.write
 
@@ -74,7 +75,7 @@ task version: [:package] do
     "\t\"rva_cars\":",
     "\t{",
     "\t\t\"description\": \"#{RVACars::DESCRIPTION}\",",
-    "\t\t\"version\": #{RVACars::VERSION},",
+    "\t\t\"version\": \"#{RVACars::VERSION}\",",
     "\t\t\"checksum\": \"#{checksum}\",",
     "\t\t\"url\": \"#{RVACars::URL}\"",
     "\t}",
