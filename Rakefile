@@ -83,7 +83,7 @@ task version: [:package] do
   ]
 
   File.open('packages.json', 'w+') do |f|
-    contents.each { |line| f.puts(line) }
+    contents.each { |l| f.puts(l) }
   end
 end
 
