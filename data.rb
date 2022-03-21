@@ -6,6 +6,6 @@ module RVACars
   YEAR = 22
   MONTH = 3
   DAY = 21
-  VERSION = "#{YEAR}.#{MONTH < 10 ? "0#{MONTH}" : MONTH}#{DAY < 10 ? "0#{DAY}" : DAY}"
+  VERSION = "#{YEAR}.#{MONTH < 10 ? "0#{MONTH}" : MONTH}#{DAY}"
   URL = 'https://distribute.revolt-america.com/rva/rva_cars.zip'
 end
