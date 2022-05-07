@@ -1,0 +1,214 @@
+{
+
+Name       	"Junky"
+
+;		(files)
+
+MODEL 	0 	"cars\junky\body.prm"
+MODEL 	1 	"cars\junky\wheel.prm"
+MODEL 	2 	"NONE"
+MODEL 	3 	"NONE"
+MODEL 	4 	"NONE"
+MODEL 	5 	"NONE"
+MODEL 	6 	"NONE"
+MODEL 	7 	"NONE"
+MODEL 	8 	"NONE"
+MODEL 	9 	"cars\junky\axle.prm"
+MODEL 	10 	"NONE"
+MODEL 	11 	"NONE"
+MODEL 	12 	"NONE"
+MODEL 	13 	"NONE"
+MODEL 	14 	"NONE"
+MODEL 	15 	"NONE"
+MODEL 	16 	"NONE"
+MODEL 	17 	"cars\misc\aerial.m"
+MODEL 	18 	"cars\misc\aerialT.m"
+TPAGE 		"cars\junky\car.bmp"
+COLL 		"cars\junky\hull.hul"
+;)TSHADOW 	"cars\junky\shadow.bmp"
+;)SHADOWTABLE 	-50 50 70 -70 0
+EnvRGB 		50 50 50
+
+;		(frontend)
+
+BestTime   	true
+Selectable 	true
+;)CPUSelectable	true
+;)Statistics 	true
+Class      	1
+Obtain     	0
+Rating     	0
+TopEnd     	2792
+Acc        	6.12
+Weight     	2.8
+Trans      	0
+MaxRevs    	0.5
+;)TCARBOX  	"cars\junky\carbox.bmp"
+;)SFXHONK 	"cars\junky\honk.wav"
+
+;		(handling)
+
+SteerRate  	3
+SteerMod   	0.4
+EngineRate 	10
+TopSpeed   	32
+DownForceMod	2
+CoM        	0 2 0
+Weapon     	0 -32 64
+
+;		(body)
+
+BODY {
+ModelNum   	0
+Offset     	0 0 0
+Mass       	2.8
+Inertia    	2700 0 0
+           	0 2680 0
+           	0 0 1480
+Gravity    	2200
+Hardness   	0
+Resistance 	0.001
+AngRes     	0.002
+ResMod     	25
+Grip       	0.01
+StaticFriction 	0.8
+KineticFriction 0.4
+}
+
+;		(wheels)
+
+WHEEL 0 - 3 {
+IsPresent   	true
+IsPowered   	true
+EngineRatio 	35000
+Radius      	21
+Mass        	0.45
+Gravity     	2200
+MaxPos      	20
+SkidWidth   	26
+ToeIn       	0
+Grip            0.015
+KineticFriction 1.3
+}
+
+WHEEL 0 - 1 {
+IsTurnable  	true
+SteerRatio  	-0.5
+AxleFriction    0.02
+}
+
+WHEEL 2 - 3 {
+IsTurnable  	false
+AxleFriction    0.05
+}
+
+WHEEL 0 {
+ModelNum 	1
+Offset1  	-28 -15 30
+Offset2  	0 0 0
+}
+
+WHEEL 1 {
+ModelNum 	1
+Offset1  	28 -15 30
+Offset2  	0 0 0
+IsTurnable  	true
+AxleFriction    0.02
+}
+
+WHEEL 2 {
+ModelNum 	1
+Offset1  	-28 -15 -37
+Offset2  	0 0 0
+}
+
+WHEEL 3 {
+ModelNum 	1
+Offset1  	28 -15 -37
+Offset2  	0 0 0
+}
+
+;		(springs)
+
+SPRING 0 - 3 {
+ModelNum    	-1
+Offset      	0 0 0
+Length      	0
+Stiffness   	450
+Damping     	9.2
+Restitution 	-0.95
+}
+
+;		(pins)
+
+PIN 0 - 3 {
+ModelNum    	-1
+Offset      	0 0 0
+Length      	0
+}
+
+;		(axles)
+
+AXLE 0 - 3 {
+ModelNum    	9
+Length      	14.5
+}
+
+AXLE 0 {
+Offset      	0 -18 30
+}
+
+AXLE 1 {
+Offset      	0 -18 30
+}
+
+AXLE 2 {
+Offset      	0 -18 -34
+}
+
+AXLE 3 {
+Offset      	0 -18 -34
+}
+
+;		(spinner)
+
+SPINNER {
+ModelNum    	-1
+Offset      	0 0 0
+Axis        	0 1 0
+AngVel      	0
+}
+
+;		(antenna)
+
+AERIAL {
+SecModelNum 	17
+TopModelNum 	18
+Offset      	-20 -58 50
+Direction   	0 -1 0
+Length      	30
+Stiffness   	5000
+Damping     	2.5
+}
+
+;		(ai)
+
+AI {
+UnderThresh 	148.970001
+UnderRange  	3645.320068
+UnderFront  	450
+UnderRear   	335
+UnderMax    	0.950791
+OverThresh  	1210.329956
+OverRange   	1391
+OverMax     	1
+OverAccThresh  	170.079391
+OverAccRange   	400
+PickupBias     	16383
+BlockBias      	16383
+OvertakeBias   	16383
+Suspension     	9830
+Aggression     	0
+}
+
+}

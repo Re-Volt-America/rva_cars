@@ -17,7 +17,7 @@ Selectable 	true
 ;)CPUSelectable	true
 ;)Statistics 	true
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
-Obtain     	1 			; Obtain method
+Obtain     	0 			; Obtain method
 Rating     	4 			; Skill level (rookie, amateur, ...)
 TopEnd     	3857.441406 		; Actual top speed (mph) for frontend bars
 Acc        	7.545021 		; Acceleration rating (empirical)

@@ -154,7 +154,7 @@ ToeIn       	0.000000
 AxleFriction    0.020000
 Grip            0.017000
 StaticFriction  1.750000
-KineticFriction 1.600000
+KineticFriction 1.650000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel

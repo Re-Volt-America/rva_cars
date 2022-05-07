@@ -1,0 +1,223 @@
+{
+
+Name      	"75C"
+
+;		(files)
+
+MODEL 	0 	"cars\corv75\body.prm"
+MODEL 	1 	"cars\corv75\wheel-fl.prm"
+MODEL 	2 	"cars\corv75\wheel-fr.prm"
+MODEL 	3 	"cars\corv75\wheel-bl.prm"
+MODEL 	4 	"cars\corv75\wheel-br.prm"
+MODEL 	5 	"NONE"
+MODEL 	6 	"NONE"
+MODEL 	7 	"NONE"
+MODEL 	8 	"NONE"
+MODEL 	9 	"cars\corv75\axle.prm"
+MODEL 	10 	"NONE"
+MODEL 	11 	"NONE"
+MODEL 	12 	"NONE"
+MODEL 	13 	"NONE"
+MODEL 	14 	"NONE"
+MODEL 	15 	"NONE"
+MODEL 	16 	"NONE"
+MODEL 	17 	"cars\misc\aerial.m"
+MODEL 	18 	"cars\misc\aerialt.m"
+TPAGE 		"cars\corv75\tpage.bmp"
+COLL 		"cars\corv75\hull.hul"
+;)TSHADOW 	"cars\corv75\shadow.bmp"
+;)SHADOWTABLE 	-35 35 55 -70 0
+EnvRGB 		255 255 255
+
+;		(frontend)
+
+BestTime   	true
+Selectable 	true
+;)CPUSelectable	true
+;)Statistics 	true
+Class      	1
+Obtain     	0
+Rating     	2
+TopEnd     	3191.456543
+Acc        	7.510442
+Weight     	1.2
+Trans      	0
+MaxRevs    	0.5
+;)TCARBOX   	"cars\corv75\carbox.bmp"
+
+;		(handling)
+
+SteerRate  	3
+SteerMod   	0.4
+EngineRate 	4.5
+TopSpeed   	38.0
+DownForceMod	2
+CoM        	0 -20 0
+Weapon     	0 -32 64
+
+;		(cameras)
+
+;)CAMATTACHED {
+;)HoodOffset 	0 80 -10
+;)HoodLook   	0.04
+;)RearOffset 	0 85 28
+;)RearLook   	0.04
+;)}
+
+;		(body)
+
+BODY {
+ModelNum   	0
+Offset     	0 0 0
+Mass       	1.2
+Inertia    	650 0 0
+           	0 1450 0
+           	0 0 700
+Gravity    	2200
+Hardness   	0
+Resistance 	0.001
+AngRes     	0.001
+ResMod     	25
+Grip       	0.01
+StaticFriction 	0.8
+KineticFriction 0.4
+}
+
+;		(wheels)
+
+WHEEL 0 - 3 {
+IsPresent   	true
+IsPowered   	true
+SteerRatio  	-0.25
+EngineRatio 	10000
+Radius      	15
+Mass        	0.5
+Gravity     	2200
+MaxPos      	15
+SkidWidth   	18.75
+ToeIn       	0
+Grip            0.025
+StaticFriction  1.55
+KineticFriction 1.45
+}
+
+WHEEL 0 - 1 {
+IsTurnable  	true
+AxleFriction    0.02
+}
+
+WHEEL 2 - 3 {
+IsTurnable  	false
+AxleFriction    0.05
+}
+
+WHEEL 0 {
+ModelNum 	1
+Offset1  	-13 15 23
+Offset2  	-5 0 0
+}
+
+WHEEL 1 {
+ModelNum 	2
+Offset1  	13 15 23
+Offset2  	5 0 0
+}
+
+WHEEL 2 {
+ModelNum 	3
+Offset1  	-13 15 -36
+Offset2  	-5 0 0
+}
+
+WHEEL 3 {
+ModelNum 	4
+Offset1  	13 15 -36
+Offset2  	5 0 0
+}
+
+;		(springs)
+
+SPRING 0 - 3 {
+ModelNum    	-1
+Offset      	0 0 0
+Length      	0
+Stiffness   	250
+Damping     	9
+Restitution 	-0.95
+}
+
+;		(pins)
+
+PIN 0 - 3 {
+ModelNum    	-1
+Offset      	0 0 0
+Length      	0
+}
+
+;		(axles)
+
+AXLE 0 - 3 {
+ModelNum    	9
+Length      	17
+}
+
+AXLE 0 {
+Offset      	-8 12 35
+}
+
+AXLE 1 {
+Offset      	8 12 35
+}
+
+AXLE 2 {
+Offset      	-8 12 -35
+}
+
+AXLE 3 {
+Offset      	8 12 -35
+}
+
+;		(spinner)
+
+SPINNER {
+ModelNum    	-1
+Offset      	0 0 0
+Axis        	0 1 0
+AngVel      	0
+}
+
+;		(antenna)
+
+AERIAL {
+SecModelNum 	17
+TopModelNum 	18
+Offset      	20 -17 21
+Direction   	0 -1 0
+Length      	17
+Stiffness   	2000
+Damping     	2.5
+}
+
+;		(ai)
+
+AI {
+UnderThresh 	1019.577637
+UnderRange  	2582.05664
+UnderFront  	816.421265
+UnderRear   	386.41
+UnderMax    	0.95
+OverThresh  	887.006409
+OverRange   	1403.790039
+OverMax     	0.35
+OverAccThresh  	154.38
+OverAccRange   	611.049988
+PickupBias     	62936
+BlockBias      	12936
+OvertakeBias   	32936
+Suspension     	0
+Aggression     	0
+}
+
+}
+
+a175_c111002

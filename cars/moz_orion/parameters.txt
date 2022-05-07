@@ -19,8 +19,8 @@ Selectable 	true
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	5 			; Skill level (rookie, amateur, ...)
-TopEnd     	4078.317383 		; Actual top speed (mph) for frontend bars
-Acc        	6.083930 		; Acceleration rating (empirical)
+TopEnd     	3883.617676 		; Actual top speed (mph) for frontend bars
+Acc        	5.802941 		; Acceleration rating (empirical)
 Weight     	1.400000 		; Scaled weight (for frontend bars)
 Trans      	0 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
 MaxRevs    	0.500000 		; Max Revs (for rev counter, deprecated...)
@@ -66,7 +66,7 @@ EnvRGB 		0 0 0
 SteerRate  	3.000000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	4.000000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	46.000004 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	43.500000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.000000 			; Down force modifier when car on floor
 CoM        	0.000000 0.000000 5.000000 	; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
