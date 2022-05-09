@@ -5,7 +5,7 @@ module RVACars
   DESCRIPTION = "Re-Volt America's Cars Pack"
   YEAR = 22
   MONTH = 5
-  DAY = 7
+  DAY = 9
   VERSION = "#{YEAR}.#{MONTH < 10 ? "0#{MONTH}" : MONTH}#{DAY}"
   URL = 'https://distribute.revolt-america.com/rva/rva_cars.zip'
 end
