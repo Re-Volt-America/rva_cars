@@ -4,7 +4,7 @@ require 'zip'
 require 'digest'
 require_relative 'data'
 
-task default: %i[clean package version]
+task default: %i[clean package carboxes version]
 
 task :clean do
   deleted_bytes = 0.0.to_f
@@ -84,6 +84,52 @@ task version: [:package] do
 
   File.open('packages.json', 'w+') do |f|
     contents.each { |l| f.puts(l) }
+  end
+end
+
+task :carboxes do
+  car_ratings = {
+    0 => 'rookie',
+    1 => 'amateur',
+    2 => 'advanced',
+    3 => 'semi-pro',
+    4 => 'pro',
+    5 => 'super-pro',
+    6 => 'clockwork'
+  }
+
+  Dir.mkdir('carboxes') unless File.exist?('carboxes')
+  (0..6).each do |i|
+    Dir.mkdir("carboxes/#{car_ratings[i]}") unless File.exist?("carboxes/#{car_ratings[i]}")
+  end
+
+  Dir.entries('cars').each do |f|
+    next if f.eql?('.') || f.eql?('..')
+
+    params_path = "cars/#{f}/parameters.txt"
+    carbox_path = if File.exist?("cars/#{f}/carbox.bmp")
+                    "cars/#{f}/carbox.bmp"
+                  else
+                    "cars/#{f}/box.bmp"
+                  end
+
+    car_rating = nil
+    car_slug = nil
+    File.open(params_path) do |pf|
+      pf.each_line do |l|
+        car_slug = l.split.drop(1).join(' ').gsub('"', '').gsub(' ', '_').downcase if l.start_with? 'Name'
+
+        next unless l.start_with? 'Rating'
+
+        car_rating = if !car_slug.nil? && car_slug.start_with?('clockwork')
+                       6
+                     else
+                       l.split[1].to_i
+                     end
+      end
+    end
+
+    FileUtils.cp(carbox_path, "carboxes/#{car_ratings[car_rating]}/#{car_slug}.bmp")
   end
 end
 
