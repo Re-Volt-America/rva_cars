@@ -22,4 +22,65 @@
 # Packaging
 *.zip
 packages.json
-carboxes
+
+# Custom Cars
+carboxes/rookie/*
+carboxes/amateur/*
+carboxes/advanced/*
+carboxes/semi-pro/*
+carboxes/pro/*
+carboxes/super-pro/*
+
+# Keep Stock Car Boxes (including DC)
+#
+# Rookie
+!carboxes/rookie/bigvolt.bmp
+!carboxes/rookie/col._moss.bmp
+!carboxes/rookie/dr._grudge.bmp
+!carboxes/rookie/dust_mite.bmp
+!carboxes/rookie/harvester.bmp
+!carboxes/rookie/phat_slug.bmp
+!carboxes/rookie/rc_bandit.bmp
+!carboxes/rookie/sprinter_xl.bmp
+!carboxes/rookie/volken_turbo.bmp
+
+# Amateur
+!carboxes/amateur/aquasonic.bmp
+!carboxes/amateur/candy_pebbles.bmp
+!carboxes/amateur/genghis_kar.bmp
+!carboxes/amateur/la_54.bmp
+!carboxes/amateur/matra_xl.bmp
+!carboxes/amateur/mouse.bmp
+!carboxes/amateur/rc_phink.bmp
+!carboxes/amateur/rc_san.bmp
+
+# Advanced
+!carboxes/advanced/bertha_ballistics.bmp
+!carboxes/advanced/bossvolt.bmp
+!carboxes/advanced/evil_weasel.bmp
+!carboxes/advanced/groovster.bmp
+!carboxes/advanced/ny_54.bmp
+!carboxes/advanced/panga_tc.bmp
+!carboxes/advanced/r6_turbo.bmp
+!carboxes/advanced/shocker.bmp
+!carboxes/advanced/splat.bmp
+
+# Semi-Pro
+!carboxes/semi-pro/adeon.bmp
+!carboxes/semi-pro/jg-7.bmp
+!carboxes/semi-pro/pest_control.bmp
+!carboxes/semi-pro/pole_poz.bmp
+!carboxes/semi-pro/rg1.bmp
+!carboxes/semi-pro/rotor.bmp
+!carboxes/semi-pro/rv_loco.bmp
+!carboxes/semi-pro/zipper.bmp
+
+# Pro
+!carboxes/pro/amw.bmp
+!carboxes/pro/cougar.bmp
+!carboxes/pro/fulon_x.bmp
+!carboxes/pro/humma.bmp
+!carboxes/pro/panga.bmp
+!carboxes/pro/purpl_xl.bmp
+!carboxes/pro/snw_35.bmp
+!carboxes/pro/toyeca.bmp
