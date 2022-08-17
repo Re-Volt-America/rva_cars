@@ -106,7 +106,12 @@ task :carboxes do
   Dir.entries('cars').each do |f|
     next if f.eql?('.') || f.eql?('..')
 
-    params_path = "cars/#{f}/parameters.txt"
+    params_path = if File.exist?("cars/#{f}/parameters.txt")
+                    "cars/#{f}/parameters.txt"
+                  else
+                    puts "Skipped #{f}/... parameters.txt not found. It's probably a skin."
+                    next
+                  end
     carbox_path = if File.exist?("cars/#{f}/carbox.bmp")
                     "cars/#{f}/carbox.bmp"
                   else
