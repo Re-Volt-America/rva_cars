@@ -80,14 +80,18 @@ Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset (deprecate
 ; Camera details
 ;====================
 
+;====================
+; Camera details
+;====================
+
 ;)CAMATTACHED {	; Start Camera
-;)HoodOffset   	0.000000 0.000000 0.000000 	; Offset from model center
-;)HoodLook     	0.050000 			; Look angle (-0.25 to 0.25, 0.0 - straight ahead)
-;)RearOffset   	0.000000 0.000000 0.000000
-;)RearLook     	0.050000
-;)FixedOffset  	true 				; Is offset fixed or moving
-;)FixedLook    	true 				; Is look fixed or moving
-;)UseDefault   	true 				; Use default offsets (computed in game)
+;)HoodOffset   	0.000000 -50.000000 -25.000000 	; Offset from model center
+;)HoodLook     	0.030000 			; Look angle (-0.25 to 0.25, 0.0 - straight ahead)
+;)RearOffset   	0.000000 -50.000000 10.000000
+;)RearLook     	0.030000
+;)FixedOffset  	true				; Is offset fixed or moving
+;)FixedLook    	true				; Is look fixed or moving
+;)UseDefault   	false				; Use default offsets (computed in game)
 ;)}            	; End Camera
 
 ;====================
