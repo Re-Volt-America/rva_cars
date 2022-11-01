@@ -14,15 +14,6 @@
 !/log/.keep
 !/tmp/.keep
 
-# Re-Volt Paintkits
-*.psd
-*.pdn
-*.xcf
-
-# Packaging
-*.zip
-packages.json
-
 # Custom Cars
 carboxes/rookie/*
 carboxes/amateur/*
@@ -32,8 +23,10 @@ carboxes/pro/*
 carboxes/super-pro/*
 carboxes/clockwork/*
 
+#
 # Keep Stock Car Boxes (including DC)
 #
+
 # Rookie
 !carboxes/rookie/bigvolt.bmp
 !carboxes/rookie/col._moss.bmp
