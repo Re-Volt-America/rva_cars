@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative 'data'
-
 task default: %i[clean carboxes]
 
 task :clean do
