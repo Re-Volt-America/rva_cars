@@ -10,4 +10,4 @@ The rva_cars repository contains the following rake tasks:
 
 Packaging and versioning is handled at the top level repo for the rva pack [here](https://github.com/Re-Volt-America/rva).
 
-Using `rake` on its own will execute all in its intended order: `:clean, :package, :version`.
+Using `rake` on its own will execute all in its intended order: `:clean, :carboxes`.
