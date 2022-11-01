@@ -1,4 +1,4 @@
-RVA Car Pack.
+RVA Car Pack
 ===
 
 Part of the [RVA](https://github.com/Re-Volt-America/rva) base repository.
