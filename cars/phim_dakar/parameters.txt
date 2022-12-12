@@ -1,0 +1,331 @@
+{
+
+;============================================================
+;============================================================
+; Dakar Truck
+;============================================================
+;============================================================
+Name      	"Dookur Special"
+
+
+;====================
+; Model Filenames
+;====================
+
+MODEL 	0 	"cars\phim_dakar\body.prm"
+MODEL 	1 	"cars\phim_dakar\wheel-l.prm"
+MODEL 	2 	"cars\phim_dakar\wheel-r.prm"
+MODEL 	3 	"cars\phim_dakar\axle.prm"
+MODEL 	4 	"NONE"
+MODEL 	5 	"NONE"
+MODEL 	6 	"NONE"
+MODEL 	7 	"NONE"
+MODEL 	8 	"NONE"
+MODEL 	9 	"NONE"
+MODEL 	10 	"NONE"
+MODEL 	11 	"NONE"
+MODEL 	12 	"NONE"
+MODEL 	13 	"NONE"
+MODEL 	14 	"NONE"
+MODEL 	15 	"NONE"
+MODEL 	16 	"NONE"
+MODEL 	17 	"cars\misc\Aerial.m"
+MODEL 	18 	"cars\misc\AerialT.m"
+TPAGE 	"cars\phim_dakar\car.bmp"
+COLL 	"cars\phim_dakar\hull.hul"
+;)TCARBOX "cars\phim_dakar\box.bmp"
+;)TSHADOW "cars\phim_dakar\shadow.bmp"
+;)SHADOWTABLE -99.0493 99.0493 105.4788 -105.4788 0
+EnvRGB 	200 200 200
+
+;====================
+; Stuff mainly for frontend display and car selectability
+;====================
+
+BestTime   	TRUE
+Selectable 	TRUE
+;)CPUSelectable TRUE
+;)Statistics TRUE
+Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
+Obtain     	0 			; Obtain method
+Rating     	5 			; Skill level (rookie, amateur, ...)
+TopEnd     	4177.548828 			; Actual top speed (mph) for frontend bars
+Acc        	8.498803 			; Acceleration rating (empirical)
+Weight     	3.500000 			; Scaled weight (for frontend bars)
+Handling   	52.000000 			; Handling ability (empirical and totally subjective)
+Trans      	0 			; Transmission type (calculate in game anyway...)
+MaxRevs    0.500000 			; Max Revs (for rev counter)
+
+;====================
+; Handling related stuff
+;====================
+
+SteerRate  	1.900000 			; Rate at which steer angle approaches value from input
+SteerMod   	0.400000 			;
+EngineRate 	8.000000 			; Rate at which Engine voltage approaches set value
+TopSpeed   	50.800000 			; Car's theoretical top speed (not including friction...)
+DownForceMod	3.000000 			; Down force modifier when car on floor
+CoM        	0.000000 -16.000000 -4.000000 		; Centre of mass relative to model centre
+Weapon     	0.000000 -32.000000 64.000000 		; Weapon genration offset
+
+;====================
+; Car Body details
+;====================
+
+BODY {		; Start Body
+ModelNum   	0 			; Model Number in above list
+Offset     	0, 15, 0 		; Calculated in game
+Mass       	3.50000
+Inertia    	4975.000000 0.000000 0.000000
+           	0.000000 5900.000000 0.000000
+           	0.000000 0.000000 3617.500000
+Gravity		2200 			; No longer used
+Hardness   	0.000000
+Resistance 	0.001000 			; Linear air esistance
+AngRes     	0.004000 			; Angular air resistance
+ResMod     	25.000000 			; Ang air resistnce scale when in air
+Grip       	0.010000 			; Converts downforce to friction value
+StaticFriction 1.000000
+KineticFriction 0.700000
+}     		; End Body
+
+;====================
+; Car Wheel details
+;====================
+
+WHEEL 0 { 	; Start Wheel
+ModelNum 	1
+Offset1  	-26.000000 15.500000 52.000000
+Offset2  	-0.500000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	TRUE
+SteerRatio  	-0.180000
+EngineRatio 	38500.000000
+Radius      	16.700000
+Mass        	0.650000
+Gravity     	2200.000000
+MaxPos      	14.000000
+SkidWidth   	24.500000
+ToeIn       	0.000000
+AxleFriction    0.020000
+Grip            0.021000
+StaticFriction  1.860000
+KineticFriction 1.860000
+}          	; End Wheel
+
+WHEEL 1 { 	; Start Wheel
+ModelNum 	1
+Offset1  	26.000000 15.500000 52.000000
+Offset2  	0.500000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	TRUE
+SteerRatio  	-0.180000
+EngineRatio 	38500.000000
+Radius      	16.700000
+Mass        	0.650000
+Gravity     	2200.000000
+MaxPos      	14.000000
+SkidWidth   	24.500000
+ToeIn       	0.000000
+AxleFriction    0.020000
+Grip            0.021000
+StaticFriction  1.860000
+KineticFriction 1.860000
+}          	; End Wheel
+
+WHEEL 2 { 	; Start Wheel
+ModelNum 	2
+Offset1  	-26.000000 15.500000 -44.000000
+Offset2  	-0.500000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	FALSE
+SteerRatio  	1.000000
+EngineRatio 	38500.000000
+Radius      	16.700000
+Mass        	0.650000
+Gravity     	2200.000000
+MaxPos      	14.000000
+SkidWidth   	24.500000
+ToeIn       	0.000000
+AxleFriction    0.050000
+Grip            0.021000
+StaticFriction  1.860000
+KineticFriction 1.860000
+}          	; End Wheel
+
+WHEEL 3 { 	; Start Wheel
+ModelNum 	2
+Offset1  	26.000000 15.500000 -44.000000
+Offset2  	0.500000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	FALSE
+SteerRatio  	1.000000
+EngineRatio 	38500.000000
+Radius      	16.700000
+Mass        	0.650000
+Gravity     	2200.000000
+MaxPos      	14.000000
+SkidWidth   	24.500000
+ToeIn       	0.000000
+AxleFriction    0.050000
+Grip            0.021000
+StaticFriction  1.860000
+KineticFriction 1.860000
+}          	; End Wheel
+
+
+;====================
+; Car Spring details
+;====================
+
+SPRING 0 { 	; Start Spring
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+Stiffness   	600.000000
+Damping     	5.000000
+Restitution 	-0.900000
+}           	; End Spring
+
+SPRING 1 { 	; Start Spring
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+Stiffness   	600.000000
+Damping     	5.000000
+Restitution 	-0.900000
+}           	; End Spring
+
+SPRING 2 { 	; Start Spring
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+Stiffness   	600.000000
+Damping     	5.000000
+Restitution 	-0.900000
+}           	; End Spring
+
+SPRING 3 { 	; Start Spring
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+Stiffness   	600.000000
+Damping     	5.000000
+Restitution 	-0.900000
+}           	; End Spring
+
+
+;====================
+; Car Pin details
+;====================
+
+PIN 0 {    	; Start Pin
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}           	; End Pin
+
+PIN 1 {    	; Start Pin
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}           	; End Pin
+
+PIN 2 {    	; Start Pin
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}           	; End Pin
+
+PIN 3 {    	; Start Pin
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}           	; End Pin
+
+
+;====================
+; Car axle details
+;====================
+
+AXLE 0 {   	; Start Axle
+ModelNum    	3
+Offset      	-9.000000 6.000000 52.000000
+Length      	2.800000
+}           	; End axle
+
+AXLE 1 {   	; Start Axle
+ModelNum    	3
+Offset      	9.000000 6.000000 52.000000
+Length      	2.800000
+}           	; End axle
+
+AXLE 2 {   	; Start Axle
+ModelNum    	3
+Offset      	-9.000000 6.000000 -44.000000
+Length      	2.800000
+}           	; End axle
+
+AXLE 3 {   	; Start Axle
+ModelNum    	3
+Offset      	9.000000 6.000000 -44.000000
+Length      	2.800000
+}           	; End axle
+
+
+;====================
+; Car spinner details
+;====================
+
+SPINNER {   	; Start spinner
+ModelNum    	-1
+Offset      	0.000000 -25.60000 -35.300000
+Axis        	0.000000 1.000000 0.000000
+AngVel      	0.000000
+}           	; End Spinner
+
+
+;====================
+; Car Aerial details
+;====================
+
+AERIAL {    	; Start Aerial
+SecModelNum 	17
+TopModelNum 	18
+Offset      	-22.000000 -55.000000 35.000000
+Direction   	0.000000 -1.000000 0.000000
+Length      	25.000000
+Stiffness   	2000.000000
+Damping     	5.500000
+}           	; End Aerial
+
+
+;====================
+; Car AI details
+;====================
+
+AI {        	 ;Start AI
+UnderThresh 	355.000000
+UnderRange  	1
+UnderFront	 	0
+UnderRear   	0
+UnderMax    	1.0
+OverThresh  	355.000000
+OverRange   	1
+OverMax     	2.0
+OverAccThresh  	5000
+OverAccRange   	0
+PickupBias     	3276
+BlockBias      	3276
+OvertakeBias   	16383
+Suspension     	0
+Aggression     	0
+}           	; End AI
+
+}
+
+Acclaim GT

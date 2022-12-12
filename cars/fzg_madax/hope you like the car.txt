@@ -1,0 +1,47 @@
+﻿                    # # # # # # # # # # # # # # # # # # #
+                    #  _____________________ ________   #
+                    #  \_   _____/\____    //  _____/   #
+                    #   |    __)    /     //   \  ___   #
+                    #   |     \    /     /_\    \_\  \  #
+                    #   \___  /   /_______ \\______  /  #
+                    #       \/            \/       \/   #
+                    #		with a friend!		#
+                    # # # # # # # # # # # # # # # # # # #
+
+Car information
+__________________________________________________________________________
+Pack name        	: Madax GT
+Car Type  		: Remodel
+Top speed		: 44 mph
+Rating/Class   		: Super-Pro
+Installed folder       	: ...\cars\fzg_madax
+Description           	: 2000 JGTC NSX, because why not!? Y'ALL DESERVED IT!
+			  First collab with Paperman, he was interested in
+			  making RC De Go remake, i'm interested in finishing
+			  my almost abandoned WIP.
+
+Author Information
+__________________________________________________________________________
+Author Name 	: Fr13ndz0n3dguy and Paperman
+Email Address   : fatahzahran@gmail.com
+
+Construction
+__________________________________________________________________________
+Base           	: G3X by Xarc
+Editor(s) used 	: Blender, Autoshade, and Paint.net
+
+Additional Credits 
+__________________________________________________________________________
+-Thanks to the official community who continues to make Re-Volt a fun and 
+attractive game !
+-R6TE and Mightycucumber who taught me blender basics
+-Burner94 for teaching me how to make custom hull on blender
+-Paperman for the awesome collab!
+-All the good responses from the people in the beloved community
+-All the updates of RVGL
+
+Copyright / Permissions
+__________________________________________________________________________
+You may do whatever you want with this car but you have to give us credits
+and give credit to the original author.
+Do not distribute without authorization.

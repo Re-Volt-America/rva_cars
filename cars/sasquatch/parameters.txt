@@ -1,0 +1,322 @@
+{
+
+;============================================================
+;============================================================
+; Sasquatch
+;============================================================
+;============================================================
+Name		"Sasquatch"
+
+;====================
+; Models
+;====================
+
+MODEL 	0 	"cars\sasquatch\body.prm"
+MODEL 	1 	"cars\sasquatch\wheell.prm"
+MODEL 	2 	"cars\sasquatch\wheelr.prm"
+MODEL 	3 	"NONE"
+MODEL 	4 	"NONE"
+MODEL 	5 	"NONE"
+MODEL 	6 	"NONE"
+MODEL 	7 	"cars\sasquatch\options.prm"
+MODEL 	8 	"cars\sasquatch\spring.prm"
+MODEL 	9 	"cars\sasquatch\axle.prm"
+MODEL 	10 	"NONE"
+MODEL 	11 	"NONE"
+MODEL 	12 	"NONE"
+MODEL 	13 	"NONE"
+MODEL 	14 	"NONE"
+MODEL 	15 	"NONE"
+MODEL 	16 	"NONE"
+MODEL 	17 	"cars\misc\Aerial.m"
+MODEL 	18 	"cars\misc\AerialT.m"
+TPAGE 		"cars\sasquatch\car.bmp"
+;)TCARBOX	"cars\sasquatch\carbox.bmp"
+;)TSHADOW	"cars\sasquatch\shadow.bmp"
+;)SHADOWTABLE	-68.000000 68.000000 92.000000 -92.000000 -8.000000
+COLL 		"cars\sasquatch\hull.hul"
+;)SFXENGINE 	"cars\sasquatch\engine.wav"
+;)SFXHONK 	"cars\sasquatch\honk.wav"
+EnvRGB 		100 100 100
+
+;====================
+; Frontend
+;====================
+
+BestTime   	TRUE
+Selectable 	TRUE
+;)Statistics 	TRUE
+Class      	1
+Obtain     	0
+Rating     	3
+TopEnd     	3399.295898
+Acc        	6.871214
+Weight     	3.000000
+Trans      	0
+MaxRevs    	0.500000
+
+;====================
+; Handling
+;====================
+
+SteerRate  	5.000000
+SteerMod   	0.000000
+EngineRate 	4.500000
+TopSpeed   	39.500000
+DownForceMod	2.000000
+CoM        	0.000000 3.000000 3.000000
+Weapon     	0.000000 -32.000000 64.000000
+
+;====================
+; Body
+;====================
+
+BODY {
+ModelNum   	0
+Offset     	0.000000 0.000000 0.000000
+Mass       	3.000000
+Inertia    	6000.000000 0.000000 0.000000
+		0.000000 13350.000000 0.000000
+		0.000000 0.000000 6150.000000
+Gravity    	2200
+Hardness   	0.000000
+Resistance 	0.001000
+AngRes     	0.001000
+ResMod     	25.000000
+Grip       	0.010000
+StaticFriction 	0.800000
+KineticFriction 0.400000
+}
+
+;====================
+; Wheels
+;====================
+
+WHEEL 0 {
+ModelNum 	1
+Offset1  	-30.000000 0.000000 43.000000
+Offset2  	-10.000000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	TRUE
+SteerRatio  	-0.250000
+EngineRatio 	40000.000000
+Radius      	20.000000
+Mass        	0.150000
+Gravity     	2200.000000
+MaxPos      	30.000000
+SkidWidth   	20.000000
+ToeIn       	0.000000
+AxleFriction    	0.020000
+Grip            	0.016000
+StaticFriction  	1.750000
+KineticFriction 	1.660000
+}
+
+WHEEL 1 {
+ModelNum 	2
+Offset1  	30.000000 0.000000 43.000000
+Offset2  	10.000000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	TRUE
+SteerRatio  	-0.250000
+EngineRatio 	40000.000000
+Radius      	20.000000
+Mass        	0.150000
+Gravity     	2200.000000
+MaxPos      	30.000000
+SkidWidth   	20.000000
+ToeIn       	0.000000
+AxleFriction    	0.020000
+Grip            	0.016000
+StaticFriction  	1.750000
+KineticFriction 	1.660000
+}
+
+WHEEL 2 {
+ModelNum 	1
+Offset1  	-30.000000 0.000000 -45.000000
+Offset2  	-10.000000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	FALSE
+SteerRatio  	0.000000
+EngineRatio 	40000.000000
+Radius      	20.000000
+Mass        	0.150000
+Gravity     	2200.000000
+MaxPos      	30.000000
+SkidWidth   	20.000000
+ToeIn       	0.000000
+AxleFriction    	0.050000
+Grip            	0.016000
+StaticFriction  	1.720000
+KineticFriction 	1.630000
+}
+
+WHEEL 3 {
+ModelNum 	2
+Offset1  	30.000000 0.000000 -45.000000
+Offset2  	10.000000 0.000000 0.000000
+IsPresent   	TRUE
+IsPowered   	TRUE
+IsTurnable  	FALSE
+SteerRatio  	0.000000
+EngineRatio 	40000.000000
+Radius      	20.000000
+Mass        	0.150000
+Gravity     	2200.000000
+MaxPos      	30.000000
+SkidWidth   	20.000000
+ToeIn       	0.000000
+AxleFriction    	0.050000
+Grip            	0.016000
+StaticFriction  	1.720000
+KineticFriction 	1.630000
+}
+
+;====================
+; Springs
+;====================
+
+SPRING 0 {
+ModelNum    	8
+Offset      	-18.000000 -38.000000 35.000000
+Length      	15.500000
+Stiffness   	150.000000
+Damping     	6.000000
+Restitution 	-0.900000
+}
+
+SPRING 1 {
+ModelNum    	8
+Offset      	18.000000 -38.000000 35.000000
+Length      	15.500000
+Stiffness   	150.000000
+Damping     	6.000000
+Restitution 	-0.900000
+}
+
+SPRING 2 {
+ModelNum    	8
+Offset      	-18.000000 -38.000000 -40.000000
+Length      	15.500000
+Stiffness   	150.000000
+Damping     	6.000000
+Restitution 	-0.900000
+}
+
+SPRING 3 {
+ModelNum    	8
+Offset      	18.000000 -38.000000 -40.000000
+Length      	15.500000
+Stiffness   	150.000000
+Damping     	6.000000
+Restitution 	-0.900000
+}
+
+;====================
+; Pins
+;====================
+
+PIN 0 {
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}
+
+PIN 1 {
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}
+
+PIN 2 {
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}
+
+PIN 3 {
+ModelNum    	-1
+Offset      	0.000000 0.000000 0.000000
+Length      	0.000000
+}
+
+;====================
+; Axles
+;====================
+
+AXLE 0 {
+ModelNum    	9
+Offset      	-5.000000 -15.000000 43.000000
+Length      	20.000000
+}
+
+AXLE 1 {
+ModelNum    	9
+Offset      	5.000000 -15.000000 43.000000
+Length      	20.000000
+}
+
+AXLE 2 {
+ModelNum    	9
+Offset      	-5.000000 -15.000000 -45.000000
+Length      	20.000000
+}
+
+AXLE 3 {
+ModelNum    	9
+Offset      	5.000000 -15.000000 -45.000000
+Length      	20.000000
+}
+
+;====================
+; Spinner
+;====================
+
+SPINNER {
+ModelNum    	7
+Offset     	0.000000 0.000000 0.000000
+Axis        	0.000000 1.000000 0.000000
+AngVel      	0.000000
+}
+
+;====================
+; Aerial
+;====================
+
+AERIAL {
+SecModelNum 	17
+TopModelNum 	18
+Offset      	23.000000 -45.000000 25.000000
+Direction   	0.000000 -1.000000 0.000000
+Length      	30.000000
+Stiffness   	2000.000000
+Damping     	5.500000
+}
+
+;====================
+; AI
+;====================
+
+AI {
+UnderThresh 	1043.510742
+UnderRange  	2702.099854
+UnderFront  	2036.469604
+UnderRear   	335.000000
+UnderMax    	0.638043
+OverThresh  	531.036438
+OverRange   	1827.135498
+OverMax     	0.640206
+OverAccThresh  	613.148560
+OverAccRange   	1021.179871
+PickupBias     	3276
+BlockBias      	3276
+OvertakeBias   	16383
+Suspension     	0
+Aggression     	0
+}
+
+A0AE08C8
