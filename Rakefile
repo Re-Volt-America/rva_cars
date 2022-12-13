@@ -98,3 +98,14 @@ task :carboxes do
     FileUtils.cp(carbox_path, "carboxes/#{car_ratings[car_rating]}/#{car_slug}.bmp")
   end
 end
+
+def bytes_to_mb(bytes)
+  format_number((bytes.to_f / 2**20).round(2))
+end
+
+def format_number(number)
+  whole, decimal = number.to_s.split('.')
+  num_groups = whole.chars.to_a.reverse.each_slice(3)
+  whole_with_commas = num_groups.map(&:join).join(',').reverse
+  [whole_with_commas, decimal].compact.join('.')
+end
