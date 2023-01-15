@@ -77,7 +77,7 @@ task :carboxes do
     carbox_path = ''
     known_carbox_files = %w[carbox256.bmp additional/carbox256.bmp carbox.bmp box.bmp]
     known_carbox_files.each do |kcf|
-      carbox_path = "cars/#{f}/#{kcf}" if File.exist?("cars/#{f}/#{kcf}")
+      (carbox_path = "cars/#{f}/#{kcf}") and break if File.exist?("cars/#{f}/#{kcf}")
     end
 
     car_rating = nil
