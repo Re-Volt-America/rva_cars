@@ -6,7 +6,7 @@ task :clean do
   deleted_bytes = 0.0.to_f
 
   # Remove unnecessary directories
-  delete_dir = %w[extra paintkit additional]
+  delete_dir = %w[extra paintkit]
   Dir[File.join('cars', '**', '*')].select { |p| File.directory? p }.each do |d|
     next unless delete_dir.include? File.basename(d)
 
@@ -30,7 +30,7 @@ task :clean do
 
   # Remove unnecessary files
   delete_ext = %w[.psd .pdn .xcf .zip .rar .tar .7z]
-  delete_file = %w[preview.jpg preview.png carbox256.bmp carbox512.bmp]
+  delete_file = %w[preview.jpg preview.png carbox512.bmp]
   Dir[File.join('cars', '**', '*')].reject { |p| File.directory? p }.each do |f|
     next unless delete_ext.include?(File.extname(f)) || delete_file.any? { |df| f.include? df }
 
@@ -73,11 +73,12 @@ task :carboxes do
                     puts "Skipped #{f}/... parameters.txt not found. It's probably a skin."
                     next
                   end
-    carbox_path = if File.exist?("cars/#{f}/carbox.bmp")
-                    "cars/#{f}/carbox.bmp"
-                  else
-                    "cars/#{f}/box.bmp"
-                  end
+
+    carbox_path = ''
+    known_carbox_files = %w[carbox256.bmp additional/carbox256.bmp carbox.bmp box.bmp]
+    known_carbox_files.each do |kcf|
+      carbox_path = "cars/#{f}/#{kcf}" if File.exist?("cars/#{f}/#{kcf}")
+    end
 
     car_rating = nil
     car_slug = nil
