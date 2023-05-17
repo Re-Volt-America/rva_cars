@@ -34,7 +34,7 @@ MODEL 	18 	"cars\misc\AerialT.m"
 TPAGE 	"cars\gtc_core400\car.bmp"
 TCARBOX  "cars\gtc_core400\carbox.bmp"
 COLL 	"cars\gtc_core400\hull.hul"
-SFXENGINE 	"cars\gtc_core400\enginefrs.wav"
+SFXENGINE 	"cars\gtc_core400\engine.wav"
 TSHADOW 	"cars\gtc_core400\shadow.bmp"
 SHADOWINDEX 	-1
 SHADOWTABLE     -82.5444 82.5444 79.9195 -79.2195 0.4883
@@ -51,8 +51,8 @@ Statistics 	TRUE
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	4 			; Skill level (rookie, amateur, ...)
-TopEnd     	3738.179443 			; Actual top speed (mph) for frontend bars
-Acc        	5.250397 			; Acceleration rating (empirical)
+TopEnd     	3616.069580 			; Actual top speed (mph) for frontend bars
+Acc        	5.131552 			; Acceleration rating (empirical)
 Weight     	1.600000 			; Scaled weight (for frontend bars)
 Handling   	50.000000 			; Handling ability (empirical and totally subjective)
 Trans      	0 			; Transmission type (calculate in game anyway...)
@@ -65,9 +65,9 @@ MaxRevs    	0.500000 			; Max Revs (for rev counter)
 SteerRate  	2.700000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	4.50000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	41.000000 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	37.500000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.000000 			; Down force modifier when car on floor
-CoM        	0.000000 1.500000 -1.500000 		; Centre of mass relative to model centre
+CoM        	0.000000 -1.800000 -2.000000 		; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 		; Weapon genration offset
 
 ;====================
@@ -79,8 +79,8 @@ ModelNum   	0 			; Model Number in above list
 Offset     	0, 0, 0 		; Calculated in game
 Mass       	1.600000
 Inertia    	1700.000000 0.000000 0.000000
-           	0.000000 2250.000000 0.000000
-           	0.000000 0.000000 1800.000000
+           	0.000000 2000.000000 0.000000
+           	0.000000 0.000000 1500.000000
 Gravity		2200 			; No longer used
 Hardness   	0.00000
 Resistance 	0.00100 		; Linear air resistance
@@ -110,10 +110,10 @@ Gravity     	2200.000000
 MaxPos      	5.000000
 SkidWidth   	11.000000
 ToeIn       	0.000000
-AxleFriction    	0.035000
+AxleFriction    	0.050000
 Grip            	0.011000
-StaticFriction  	1.250000
-KineticFriction 	1.260000
+StaticFriction  	1.540000
+KineticFriction 	1.550000
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
@@ -131,10 +131,10 @@ Gravity     	2200.000000
 MaxPos      	5.000000
 SkidWidth   	11.000000
 ToeIn       	0.000000
-AxleFriction    	0.035000
+AxleFriction    	0.050000
 Grip            	0.011000
-StaticFriction  	1.250000
-KineticFriction 	1.260000
+StaticFriction  	1.540000
+KineticFriction 	1.550000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel
@@ -152,10 +152,10 @@ Gravity     	2200.000000
 MaxPos      	5.000000
 SkidWidth   	11.000000
 ToeIn       	0.000000
-AxleFriction    	0.035000
+AxleFriction    	0.050000
 Grip            	0.011000
-StaticFriction  	1.240000
-KineticFriction 	1.260000
+StaticFriction  	1.540000
+KineticFriction 	1.550000
 }          	; End Wheel
 
 WHEEL 3 { 	; Start Wheel
@@ -173,10 +173,10 @@ Gravity     	2200.000000
 MaxPos      	5.000000
 SkidWidth   	11.000000
 ToeIn       	0.000000
-AxleFriction    	0.035000
+AxleFriction    	0.050000
 Grip            	0.011000
-StaticFriction  	1.240000
-KineticFriction 	1.260000
+StaticFriction  	1.540000
+KineticFriction 	1.550000
 }          	; End Wheel
 
 
@@ -189,7 +189,7 @@ ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
 Stiffness   	540.000000
-Damping     	11.000000
+Damping     	10.000000
 Restitution 	-0.750000
 }           	; End Spring
 
@@ -198,7 +198,7 @@ ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
 Stiffness   	540.000000
-Damping     	11.000000
+Damping     	10.000000
 Restitution 	-0.750000
 }           	; End Spring
 
@@ -207,7 +207,7 @@ ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
 Stiffness   	540.000000
-Damping     	11.000000
+Damping     	10.000000
 Restitution 	-0.750000
 }           	; End Spring
 
@@ -216,7 +216,7 @@ ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
 Stiffness   	540.000000
-Damping     	11.000000
+Damping     	10.000000
 Restitution 	-0.750000
 }           	; End Spring
 
