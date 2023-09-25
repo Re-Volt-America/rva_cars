@@ -323,9 +323,9 @@ AngVel      	2.000000
 AERIAL {    	; Start Aerial
 SecModelNum 	17
 TopModelNum 	18
-Offset      	0.000000 -35.000000 -22.250000
+Offset      	0.000000 -42.000000 -22.250000
 Direction   	0.000000 -1.000000 0.000000
-Length      	29.000000
+Length      	25.000000
 Stiffness   	2000.000000
 Damping     	5.500000
 }           	; End Aerial

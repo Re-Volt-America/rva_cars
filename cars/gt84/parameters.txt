@@ -49,9 +49,9 @@ Statistics	TRUE
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	4 			; Skill level (rookie, amateur, ...)
-TopEnd     	3899.636475 			; Actual top speed (mph) for frontend bars
-Acc        	6.682056 			; Acceleration rating (empirical)
-Weight     	1.500000 			; Scaled weight (for frontend bars)
+TopEnd     	3680.418945 			; Actual top speed (mph) for frontend bars
+Acc        	4.682482 			; Acceleration rating (empirical)
+Weight     	1.900000 			; Scaled weight (for frontend bars)
 Handling   	48.000000 			; Handling ability (empirical and totally subjective)
 Trans      	0 			; Transmission type (calculate in game anyway...)
 MaxRevs    	0.500000 			; Max Revs (for rev counter)
