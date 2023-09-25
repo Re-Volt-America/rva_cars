@@ -21,7 +21,7 @@ Obtain     	0 			; Obtain method
 Rating     	0 			; Skill level (rookie, amateur, ...)
 TopEnd     	2837.993652 			; Actual top speed (mph) for frontend bars
 Acc        	7.071129 			; Acceleration rating (empirical)
-Weight     	1.600000 			; Scaled weight (for frontend bars)
+Weight     	1.200000 			; Scaled weight (for frontend bars)
 Trans      	2 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
 MaxRevs    	0.500000 			; Max Revs (for rev counter, deprecated...)
 ;)TCARBOX  	"cars/gekko/carbox.bmp" 		; Carbox texture

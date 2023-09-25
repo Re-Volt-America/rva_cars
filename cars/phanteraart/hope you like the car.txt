@@ -1,0 +1,49 @@
+FZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZG
+FZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZG
+FZGFZGFZGFZGFZGFZGFZGFZGFZGFr13ndz0n3dguyFZGFZGFZGFZGFZGFZGFZGFZG
+FZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZG
+FZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZGFZG
+
+Car information
+__________________________________________________________________________
+Car name		: Phantera ART
+Car Type		: Remodel
+Top speed	: 45 Mph
+Rating/Class	: Super-Pro
+Installed folder	: ...\cars\phanteraart
+Description	: This is my rendition of XJ220 TWR, thought Thames GT - TTdriver
+		  could use better modifications. Being it still 4WD but not AWD,
+		  it's lighter, more powerful, and looking more sleek obviously.
+		  What i'm more glad is to make many race themed liveries, ofc
+		  especially the Silk Cut bootleg "Volt Age".
+
+		  I use FH4 engine sound, closest sound if its rc car instead.
+		  Main nemesis = Irakso Devil & Devyaty
+		  Lesser nemesis = X-Matix 133, Gugnir, & Origin
+
+Author Information
+__________________________________________________________________________
+Author Name 	: Fr13ndz0n3dguy
+Email Address   	: fatahzahran@gmail.com
+
+Construction
+__________________________________________________________________________
+Base           	: Thames GT by TTDriver
+Editor(s) used 	: Blender, Autoshade, and Paint.net
+
+Additional Credits 
+__________________________________________________________________________
+-Thanks to the official community who continues to make Re-Volt a fun and 
+attractive game !
+-R6TE and Mightycucumber who taught me blender basics
+-Burner94 for teaching me how to make custom hull on blender
+-TTDriver for making Thames GT exist so i can make it better
+-NotDaijoubou and Yun for beta testing
+-All good people responses on the lovely Discord community
+-All the updates of RVGL
+
+Copyright / Permissions
+__________________________________________________________________________
+You may do whatever you want with this car but you have to give us credits
+and give credit to the original author.
+Do not distribute without authorization.
