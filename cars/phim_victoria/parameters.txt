@@ -110,8 +110,8 @@ SkidWidth   		14.000000
 ToeIn       		0.000000
 AxleFriction    	0.020000
 Grip            	0.017000
-StaticFriction  	1.740000
-KineticFriction 	1.820000
+StaticFriction  	1.440000
+KineticFriction 	1.520000
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
@@ -131,8 +131,8 @@ SkidWidth   		14.000000
 ToeIn       		0.000000
 AxleFriction    	0.020000
 Grip            	0.017000
-StaticFriction  	1.740000
-KineticFriction 	1.820000
+StaticFriction  	1.440000
+KineticFriction 	1.520000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel
@@ -152,8 +152,8 @@ SkidWidth   		14.000000
 ToeIn       		0.000000
 AxleFriction    	0.050000
 Grip            	0.017000
-StaticFriction  	1.780000
-KineticFriction 	1.810000
+StaticFriction  	1.480000
+KineticFriction 	1.510000
 }          	; End Wheel
 
 WHEEL 3 { 	; Start Wheel
@@ -173,8 +173,8 @@ SkidWidth   		14.000000
 ToeIn       		0.000000
 AxleFriction    	0.050000
 Grip            	0.017000
-StaticFriction  	1.780000
-KineticFriction 	1.810000
+StaticFriction  	1.480000
+KineticFriction 	1.510000
 }          	; End Wheel
 
 

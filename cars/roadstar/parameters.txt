@@ -57,7 +57,7 @@ TopEnd     	2784.066650 			; Actual top speed (mph) for frontend bars
 Acc        	5.599.732 			; Acceleration rating (empirical)
 Weight     	2.000000 			; Scaled weight (for frontend bars)
 Handling   	50.000000 			; Handling ability (empirical and totally subjective)
-Trans      	0 			; Transmission type (calculate in game anyway...)
+Trans      	1 			; Transmission type (calculate in game anyway...)
 MaxRevs    	0.500000 			; Max Revs (for rev counter)
 
 ;====================

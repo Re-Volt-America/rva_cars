@@ -2,7 +2,7 @@
 
 ;============================================================
 ;============================================================
-; Drome Champ
+; Drome Champ (name suggested by burner94) - Original mesh by Mace121
 ;============================================================
 ;============================================================
 Name       	"Drome Champ"
@@ -19,8 +19,8 @@ Selectable 	true
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	4 			; Skill level (rookie, amateur, ...)
-TopEnd     	3635.867432 		; Actual top speed (mph) for frontend bars
-Acc        	4.814563 		; Acceleration rating (empirical)
+TopEnd     	3500.368408 		; Actual top speed (mph) for frontend bars
+Acc        	5.294589 		; Acceleration rating (empirical)
 Weight     	1.500000 		; Scaled weight (for frontend bars)
 Trans      	0 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
 MaxRevs    	1.000000 		; Max Revs (for rev counter, deprecated...)
@@ -66,7 +66,7 @@ EnvRGB 		192 192 192
 SteerRate  	6.500000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.800000 			;
 EngineRate 	5.000000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	43.500000 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	42.500000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.500000 			; Down force modifier when car on floor
 CoM        	0.000000 -2.000000 -6.000000 	; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
@@ -121,7 +121,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	true
 SteerRatio  	-0.450000
-EngineRatio 	15000.000000
+EngineRatio 	12000.000000
 Radius      	11.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -143,7 +143,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	true
 SteerRatio  	-0.450000
-EngineRatio 	15000.000000
+EngineRatio 	12000.000000
 Radius      	11.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -165,7 +165,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	-0.400000
-EngineRatio 	27000.000000
+EngineRatio 	24000.000000
 Radius      	13.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -187,7 +187,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	-0.400000
-EngineRatio 	27000.000000
+EngineRatio 	24000.000000
 Radius      	13.500000
 Mass        	0.150000
 Gravity     	2200.000000

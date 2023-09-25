@@ -112,7 +112,7 @@ KineticFriction 0.400000
 WHEEL 0 { 	; Start Wheel
 ModelNum 	1
 Offset1  	-28.000000 -3.000000 30.000000
-Offset2  	-5.000000 0.000000 0.000000
+Offset2  	-6.000000 0.000000 0.000000
 IsPresent   	true
 IsPowered   	true
 IsTurnable  	true
@@ -127,7 +127,7 @@ ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
 Grip            0.015000
-StaticFriction  1.250000
+StaticFriction  1.450000
 KineticFriction 1.500000
 }          	; End Wheel
 

@@ -1,8 +1,10 @@
 RVA Car Pack
 ===
 
-Part of the [RVA](https://github.com/Re-Volt-America/rva) base repository.
+Part of [Re-Volt America's](https://github.com/Re-Volt-America/rva) base repository.
 The base repository includes this as a sub-module.
+
+**If you already have installed [Re-Volt I/O's](https://re-volt.io/downloads/packs) Main Car Pack (v23.0923), then you can download a tiny version of our pack which only includes the extra requiered cars [right here](https://www.dropbox.com/scl/fi/e208dt96nci70pbnqou78/rva_cars-io_add-on.zip?rlkey=l60h3061tfevj2mi2xzepxl09&dl=1).**
 
 ## Tasks
 The rva_cars repository contains the following rake tasks:
