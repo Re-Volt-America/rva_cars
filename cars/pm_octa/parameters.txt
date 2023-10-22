@@ -63,7 +63,7 @@ EnvRGB 		100 100 100
 ; Handling related stuff
 ;====================
 
-SteerRate  	1.600000 			; Rate at which steer angle approaches value from input
+SteerRate  	1.650000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	4.000000 			; Rate at which Engine voltage approaches set value
 TopSpeed   	40.799999 			; Car's theoretical top speed (not including friction...)
@@ -128,7 +128,7 @@ Radius      	16.000000
 Mass        	0.150000
 Gravity     	2200.000000
 MaxPos      	10.000000
-SkidWidth   	0.000000
+SkidWidth   	15.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.020000
@@ -150,7 +150,7 @@ Radius      	16.000000
 Mass        	0.150000
 Gravity     	2200.000000
 MaxPos      	10.000000
-SkidWidth   	0.000000
+SkidWidth   	15.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.020000
@@ -172,7 +172,7 @@ Radius      	16.000000
 Mass        	0.150000
 Gravity     	2200.000000
 MaxPos      	10.000000
-SkidWidth   	0.000000
+SkidWidth   	15.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
@@ -194,7 +194,7 @@ Radius      	16.000000
 Mass        	0.150000
 Gravity     	2200.000000
 MaxPos      	10.000000
-SkidWidth   	0.000000
+SkidWidth   	15.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
