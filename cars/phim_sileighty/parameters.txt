@@ -95,58 +95,58 @@ KineticFriction 0.400000
 
 WHEEL 0 { 	; Start Wheel
 ModelNum 	1
-Offset1  	-27.500000 -5.300000 43.200000
+Offset1  	-27.500000 -4.000000 43.200000
 Offset2  	-0.000000 0.000000 0.000000
 IsPresent   		TRUE
 IsPowered   		FALSE
 IsTurnable  		TRUE
 SteerRatio  		-0.400000
 EngineRatio 		5000.000000
-Radius      		13.000000
+Radius      		12.000000
 Mass        		0.090000
 Gravity     		2200.000000
 MaxPos      		3.000000
 SkidWidth   		14.000000
 ToeIn       		-2.000000
 ;)Camber			-7.000000
-AxleFriction    	0.037000
+AxleFriction    	0.020000
 Grip            	0.008000
 StaticFriction  	1.250000
-KineticFriction 	1.440000
+KineticFriction 	1.500000
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
 ModelNum 	1
-Offset1  	27.500000 -5.300000 43.200000
+Offset1  	27.500000 -4.000000 43.200000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   		TRUE
 IsPowered   		FALSE
 IsTurnable  		TRUE
 SteerRatio  		-0.400000
 EngineRatio 		5000.000000
-Radius      		13.000000
+Radius      		12.000000
 Mass        		0.090000
 Gravity     		2200.000000
 MaxPos      		3.000000
 SkidWidth   		14.000000
 ToeIn       		-2.000000
 ;)Camber			-7.000000
-AxleFriction    	0.037000
+AxleFriction    	0.020000
 Grip            	0.008000
 StaticFriction  	1.250000
-KineticFriction 	1.440000
+KineticFriction 	1.500000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel
 ModelNum 	2
-Offset1  	-27.500000 -5.300000 -30.400000
+Offset1  	-27.500000 -4.000000 -30.400000
 Offset2  	-0.000000 0.000000 0.000000
 IsPresent   		TRUE
 IsPowered   		TRUE
 IsTurnable  		FALSE
 SteerRatio  		1.000000
 EngineRatio 		48000.000000
-Radius      		13.000000
+Radius      		12.000000
 Mass        		0.100000
 Gravity     		2200.000000
 MaxPos      		3.500000
@@ -156,19 +156,19 @@ ToeIn       		2.000000
 AxleFriction    	0.030000
 Grip            	0.008300
 StaticFriction  	1.200000
-KineticFriction 	1.520000
+KineticFriction 	1.540000
 }          	; End Wheel
 
 WHEEL 3 { 	; Start Wheel
 ModelNum 	2
-Offset1  	27.500000 -5.300000 -30.400000
+Offset1  	27.500000 -4.000000 -30.400000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   		TRUE
 IsPowered   		TRUE
 IsTurnable  		FALSE
 SteerRatio  		1.000000
 EngineRatio 		48000.000000
-Radius      		13.000000
+Radius      		12.000000
 Mass        		0.100000
 Gravity     		2200.000000
 MaxPos      		3.500000
@@ -178,7 +178,7 @@ ToeIn       		2.000000
 AxleFriction    	0.030000
 Grip            	0.008300
 StaticFriction  	1.200000
-KineticFriction 	1.520000
+KineticFriction 	1.540000
 }          	; End Wheel
 
 
@@ -190,36 +190,36 @@ SPRING 0 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	900.000000
-Damping     	12.000000
-Restitution 	-0.950000
+Stiffness   	850.000000
+Damping     	14.000000
+Restitution 	-0.770000
 }           	; End Spring
 
 SPRING 1 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	900.000000
-Damping     	12.000000
-Restitution 	-0.950000
+Stiffness   	850.000000
+Damping     	14.000000
+Restitution 	-0.770000
 }           	; End Spring
 
 SPRING 2 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	900.000000
-Damping     	9.000000
-Restitution 	-0.950000
+Stiffness   	780.000000
+Damping     	14.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 3 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	900.000000
-Damping     	9.000000
-Restitution 	-0.950000
+Stiffness   	780.000000
+Damping     	14.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 
