@@ -19,11 +19,11 @@ Selectable 	true
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	3 			; Skill level (rookie, amateur, ...)
-TopEnd     	3419.665039 		; Actual top speed (mph) for frontend bars
-Acc        	5.912988 		; Acceleration rating (empirical)
+TopEnd     	3270.405273 		; Actual top speed (mph) for frontend bars
+Acc        	5.490851 		; Acceleration rating (empirical)
 Weight     	2.000000 		; Scaled weight (for frontend bars)
 Trans      	1 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
-MaxRevs    	0.550000 		; Max Revs (for rev counter, deprecated...)
+MaxRevs    	0.500000 		; Max Revs (for rev counter, deprecated...)
 
 ;====================
 ; Model Filenames
@@ -66,9 +66,9 @@ EnvRGB 		200 200 200
 SteerRate  	2.500000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.200000 			;
 EngineRate 	4.500000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	35.000000 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	34.000000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.000000 			; Down force modifier when car on floor
-CoM        	0.000000 3.200000 -1.750000 	; Centre of mass relative to model centre
+CoM        	0.000000 5.000000 -4.000000 	; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset (deprecated)
 ;)WeaponOffset1	0.000000 -32.000000 64.000000 	; Offset for shockwaves and fireworks
 ;)WeaponOffset2	0.000000 -16.000000 80.000000 	; Offset for water bombs
@@ -127,7 +127,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	true
 SteerRatio  	-0.250000
-EngineRatio 	38000.000000
+EngineRatio 	40000.000000
 Radius      	11.000000
 Mass        	0.170000
 Gravity     	2200.000000
@@ -136,9 +136,9 @@ SkidWidth   	12.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
-Grip            0.017000
+Grip            0.016000
 StaticFriction  1.800000
-KineticFriction 1.800000
+KineticFriction 1.650000
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
@@ -149,7 +149,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	true
 SteerRatio  	-0.250000
-EngineRatio 	38000.000000
+EngineRatio 	40000.000000
 Radius      	11.000000
 Mass        	0.170000
 Gravity     	2200.000000
@@ -158,9 +158,9 @@ SkidWidth   	12.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
-Grip            0.017000
+Grip            0.016000
 StaticFriction  1.800000
-KineticFriction 1.800000
+KineticFriction 1.650000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel
@@ -171,7 +171,7 @@ IsPresent   	true
 IsPowered   	false
 IsTurnable  	false
 SteerRatio  	0.000000
-EngineRatio 	30000.000000
+EngineRatio 	0.000000
 Radius      	11.000000
 Mass        	0.170000
 Gravity     	2200.000000
@@ -180,9 +180,9 @@ SkidWidth   	12.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
-Grip            0.017000
-StaticFriction  1.800000
-KineticFriction 1.800000
+Grip            0.016000
+StaticFriction  1.700000
+KineticFriction 1.650000
 }          	; End Wheel
 
 WHEEL 3 { 	; Start Wheel
@@ -193,7 +193,7 @@ IsPresent   	true
 IsPowered   	false
 IsTurnable  	false
 SteerRatio  	0.000000
-EngineRatio 	30000.000000
+EngineRatio 	0.000000
 Radius      	11.000000
 Mass        	0.170000
 Gravity     	2200.000000
@@ -202,9 +202,9 @@ SkidWidth   	12.000000
 ToeIn       	0.000000
 ;)Camber    	0.000000
 AxleFriction    0.050000
-Grip            0.017000
-StaticFriction  1.800000
-KineticFriction 1.800000
+Grip            0.016000
+StaticFriction  1.700000
+KineticFriction 1.650000
 }          	; End Wheel
 
 
