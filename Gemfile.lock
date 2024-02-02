@@ -1,16 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (13.0.6)
+    rake (13.1.0)
 
 PLATFORMS
-  x64-mingw32
+  ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
-  rake (~> 13.0, >= 13.0.6)
+  rake (~> 13.1)
 
 RUBY VERSION
-   ruby 2.7.3p183
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.2.26
+   2.4.21
