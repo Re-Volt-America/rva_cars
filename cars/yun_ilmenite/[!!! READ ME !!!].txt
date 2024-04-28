@@ -1,0 +1,16 @@
+Ilmenite, by yun and burner94
+
+Credits
+
+burner94: Model and major details, patience to finish it
+yun: Main idea and concept, parameters and minor details plus livery
+
+This car is very inspired from "Titan" from Motorhead, a 1999 game from Digital Illusions CE.
+That car is originally a mix between a Vector M12 for its front and an Italdesign Calá for its rear, but thanks to burner it's now an amalgamation of 5 cars:
+
+A Vector M12, an Italdesign Calá, a McLaren 765LT, a Peugeot Onyx and an Audi R8.
+
+The car is meant to be an anvil on wheels, and it wasn't originally planned for the Leap Year event, it only got adapted towards it since it was sitting there, not being finished.
+Big thanks to all the RVA folks and to Burner94, stuff couldn't be done without him after all.
+
+Parameters are not the same as the Event one, I retouched them a bit to make it more stable and have more racing pace with other Super Pros.
