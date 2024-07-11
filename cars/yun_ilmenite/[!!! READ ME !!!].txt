@@ -14,3 +14,5 @@ The car is meant to be an anvil on wheels, and it wasn't originally planned for 
 Big thanks to all the RVA folks and to Burner94, stuff couldn't be done without him after all.
 
 Parameters are not the same as the Event one, I retouched them a bit to make it more stable and have more racing pace with other Super Pros.
+
+Update 11/07/2024: Added Burner94's "Burnt Titanium" skin, the original concept we had for the car! I also re-did the parameters to actually meet the original vision of the car, which was a very heavy speedster car meant to survive everything, boasting professional looks and noticeable body roll.
