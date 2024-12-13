@@ -1,8 +1,0 @@
-26/11/2023
-- revised hull, thank you burner for feedback!
-
-14/1/2024
-- further hull revision, added tail lights and minor parameter tweaks in regards of understeer, thank you mighty for feedback!
-
-22/1/2024
-- further tweaks in response to the poor performance in the test session. lower inertia, more steering range and higher accel on the wheels, thank you mighty and ahma for feedback!
