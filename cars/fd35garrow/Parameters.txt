@@ -2,7 +2,6 @@
 
 ;============================================================
 ;============================================================
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ; Ultima
 ;============================================================
 ;============================================================
@@ -36,23 +35,6 @@ MODEL 	1 	"cars/fd35garrow/wheelfl.prm"
 MODEL 	2 	"cars/fd35garrow/wheelfr.prm"
 MODEL 	3 	"cars/fd35garrow/wheelbl.prm"
 MODEL 	4 	"cars/fd35garrow/wheelbr.prm"
-========
-; CALCIUM TC
-;============================================================
-;============================================================
-Name       	"Adrenaline XL"
-
-
-;====================
-; Model Filenames
-;====================
-
-MODEL 	0 	"cars/tcp_adren/body.prm"
-MODEL 	1 	"cars/tcp_adren/wheel-l.prm"
-MODEL 	2 	"cars/tcp_adren/wheel-r.prm"
-MODEL 	3 	"NONE"
-MODEL 	4 	"NONE"
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 MODEL 	5 	"NONE"
 MODEL 	6 	"NONE"
 MODEL 	7 	"NONE"
@@ -67,7 +49,6 @@ MODEL 	15 	"NONE"
 MODEL 	16 	"NONE"
 MODEL 	17 	"cars/misc/Aerial.m"
 MODEL 	18 	"cars/misc/AerialT.m"
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 COLL 	"cars/fd35garrow/hull.hul"
 SFXENGINE 	"NONE"
 TPAGE 	"cars/fd35garrow/car.bmp"
@@ -75,42 +56,11 @@ TPAGE 	"cars/fd35garrow/car.bmp"
 ;)SHADOWINDEX 	-1
 ;)SHADOWTABLE 	-51.200001 51.200001 72.599998 -72.300003 -10.300000 	; Left, right, front, back, height (relative to model center)
 EnvRGB 	200 200 200
-========
-COLL 		"cars/tcp_adren/hull.hul"
-TPAGE 		"cars/tcp_adren/car.bmp"
-;)TCARBOX 	"cars/tcp_adren/carbox.bmp" 			; Carbox texture
-;)TSHADOW 	"cars/tcp_adren/shadow.bmp" 			; Shadow texture
-;)SHADOWINDEX 	-1 							; Use a default shadow (0 to 27 or -1)
-;)SHADOWTABLE -45.5 45.5 77.3 -79.8 -7.1 	; Left, right, front, back, height (relative to model center)
-;)SFXENGINE 	"NONE"
-;)SFXSERVO 	"NONE"
-;)SFXHONK 	"NONE"
-EnvRGB 		200 200 200
-
-;====================
-; Stuff mainly for frontend display and car selectability
-;====================
-
-BestTime   	true
-Selectable 	true
-;)CPUSelectable	true
-;)Statistics 	true
-Class      	0 			; Engine type (0=Elec, 1=Glow, 2=Other)
-Obtain     	0 			; Obtain method
-Rating     	5 			; Skill level (rookie, amateur, ...)
-TopEnd     	3949.762695 		; Actual top speed (mph) for frontend bars
-Acc        	5.055728 		; Acceleration rating (empirical)
-Weight     	1.400000 		; Scaled weight (for frontend bars)
-Trans      	0 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
-MaxRevs    	0.500000 		; Max Revs (for rev counter, deprecated...)
-
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 
 ;====================
 ; Handling related stuff
 ;====================
 
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 SteerRate  	3.200000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	4.000000 			; Rate at which Engine voltage approaches set value
@@ -121,19 +71,6 @@ Weapon     	0.000000 -32.000000 64.000000 		; Weapon generation offset
 ;)Flippable	false 			; Rotor car effect
 ;)Flying   	false 			; Flying like the UFO car
 ;)ClothFx  	false 			; Mystery car cloth effect
-========
-SteerRate  	2.700000 			; Rate at which steer angle approaches value from input
-SteerMod   	0.400000 			;
-EngineRate 	4.500000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	43.10000 			; Car's theoretical top speed (not including friction...)
-DownForceMod	2.000000 			; Down force modifier when car on floor
-CoM        	0.000000 0.00000 2.000000 	; Centre of mass relative to model centre
-Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
-;)Flippable	false 		; Rotor car effect
-;)Flying   	false 		; Flying like the UFO car
-;)ClothFx  	false 		; Mystery car cloth effect
-
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 
 ;====================
 ; Car Body details
@@ -142,24 +79,17 @@ Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
 BODY {		; Start Body
 ModelNum   	0 			; Model Number in above list
 Offset     	0.000000 0.000000 0.000000
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 Mass       	1.250000
 Inertia    	910.000000 0.000000 0.000000
            	0.000000 1110.000000 0.000000
            	0.000000 0.000000 280.000000
-========
-Mass       	1.40000
-Inertia    	1000.000000 0.000000 0.000000
-           	0.000000 2100.000000 0.000000
-           	0.000000 0.000000 850.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Gravity    	2200 			; No longer used
 Hardness   	0.000000
-Resistance 	0.001000 		; Linear air resistance
-AngRes     	0.001000 		; Angular air resistance
-ResMod     	25.000000 		; AngRes scale when in air
-Grip       	0.010000 		; Converts downforce to friction value
-StaticFriction 	0.800000
+Resistance 	0.001000 			; Linear air resistance
+AngRes     	0.001000 			; Angular air resistance
+ResMod     	25.000000 			; AngRes scale when in air
+Grip       	0.010000 			; Converts downforce to friction value
+StaticFriction 0.800000
 KineticFriction 0.400000
 }     		; End Body
 
@@ -169,7 +99,6 @@ KineticFriction 0.400000
 
 WHEEL 0 { 	; Start Wheel
 ModelNum 	1
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 Offset1  	-19.000000 -1.000000 30.000000
 Offset2  	-4.500000 0.000000 0.000000
 IsPresent   	true
@@ -188,31 +117,10 @@ AxleFriction    	0.050000
 Grip            	0.012000
 StaticFriction  	1.400000
 KineticFriction 	1.250000
-========
-Offset1  	-23.29 -4.0 33.62
-Offset2  	0.000000 0.000000 0.000000
-IsPresent   	true
-IsPowered   	true
-IsTurnable  	true
-SteerRatio  	-0.400000
-EngineRatio 	16000.000000
-Radius      	9.90000
-Mass        	0.150000
-Gravity     	2200.000000
-MaxPos      	3.000000
-SkidWidth   	13.000000
-ToeIn       	0.000000
-;)Camber    	0.000000
-AxleFriction    0.020000
-Grip            0.015000
-StaticFriction  1.900000
-KineticFriction 1.700000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
 ModelNum 	2
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 Offset1  	19.000000 -1.000000 30.000000
 Offset2  	4.500000 0.000000 0.000000
 IsPresent   	true
@@ -237,37 +145,10 @@ WHEEL 2 { 	; Start Wheel
 ModelNum 	3
 Offset1  	-19.000000 -1.000000 -41.000000
 Offset2  	-4.500000 0.000000 0.000000
-========
-Offset1  	23.29 -4.0 33.62
-Offset2  	0.000000 0.000000 0.000000
-IsPresent   	true
-IsPowered   	true
-IsTurnable  	true
-SteerRatio  	-0.400000
-EngineRatio 	16000.000000
-Radius      	9.90000
-Mass        	0.150000
-Gravity     	2200.000000
-MaxPos      	3.000000
-SkidWidth   	13.000000
-ToeIn       	0.000000
-;)Camber    	0.000000
-AxleFriction    0.020000
-Grip            0.015000
-StaticFriction  1.900000
-KineticFriction 1.700000
-}          	; End Wheel
-
-WHEEL 2 { 	; Start Wheel
-ModelNum 	1
-Offset1  	-23.29 -4.0 -38.52
-Offset2  	0.000000 0.000000 0.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	0.100000
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 EngineRatio 	11000.000000
 Radius      	13.000000
 Mass        	0.150000
@@ -286,31 +167,10 @@ WHEEL 3 { 	; Start Wheel
 ModelNum 	4
 Offset1  	19.000000 -1.000000 -41.000000
 Offset2  	4.500000 0.000000 0.000000
-========
-EngineRatio 	16000.000000
-Radius      	9.90000
-Mass        	0.150000
-Gravity     	2200.000000
-MaxPos      	3.000000
-SkidWidth   	13.000000
-ToeIn       	0.000000
-;)Camber    	0.000000
-AxleFriction    0.050000
-Grip            0.0150000
-StaticFriction  2.000000
-KineticFriction 1.750000
-}          	; End Wheel
-
-WHEEL 3 { 	; Start Wheel
-ModelNum 	2
-Offset1  	23.29 -4.0 -38.52
-Offset2  	0.000000 0.000000 0.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	0.100000
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 EngineRatio 	11000.000000
 Radius      	13.000000
 Mass        	0.150000
@@ -323,20 +183,6 @@ AxleFriction    	0.050000
 Grip            	0.017000
 StaticFriction  	1.400000
 KineticFriction 	1.350000
-========
-EngineRatio 	16000.000000
-Radius      	9.90000
-Mass        	0.150000
-Gravity     	2200.000000
-MaxPos      	3.000000
-SkidWidth   	13.000000
-ToeIn       	0.000000
-;)Camber    	0.000000
-AxleFriction    0.050000
-Grip            0.0150000
-StaticFriction  2.000000
-KineticFriction 1.750000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 }          	; End Wheel
 
 
@@ -345,70 +191,38 @@ KineticFriction 1.750000
 ;====================
 
 SPRING 0 { 	; Start Spring
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ModelNum    	8
 Offset      	-10.000000 -21.000000 27.000000
 Length      	15.000000
 Stiffness   	200.000000
 Damping     	7.000000
-========
-ModelNum    	-1
-Offset      	0.000000 0.000000 0.000000
-Length      	0.000000
-Stiffness   	800.000000
-Damping     	10.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 1 { 	; Start Spring
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ModelNum    	8
 Offset      	10.000000 -21.000000 27.000000
 Length      	15.000000
 Stiffness   	200.000000
 Damping     	7.000000
-========
-ModelNum    	-1
-Offset      	0.000000 0.000000 0.000000
-Length      	0.000000
-Stiffness   	800.000000
-Damping     	10.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 2 { 	; Start Spring
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ModelNum    	8
 Offset      	-10.000000 -20.000000 -42.500000
 Length      	15.000000
 Stiffness   	200.000000
 Damping     	7.000000
-========
-ModelNum    	-1
-Offset      	0.000000 0.000000 0.000000
-Length      	0.000000
-Stiffness   	800.000000
-Damping     	10.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 3 { 	; Start Spring
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ModelNum    	8
 Offset      	10.000000 -20.000000 -42.500000
 Length      	15.000000
 Stiffness   	200.000000
 Damping     	7.000000
-========
-ModelNum    	-1
-Offset      	0.000000 0.000000 0.000000
-Length      	0.000000
-Stiffness   	800.000000
-Damping     	10.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Restitution 	-0.750000
 }           	; End Spring
 
@@ -480,13 +294,8 @@ ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Axis        	0.000000 1.000000 0.000000
 AngVel      	0.000000
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 ;)Type      	1 			; 1: Default rot, 2: Turn with steer, 4: Translate with speed, 6: 2 and 4
 ;)Trans     	0.000000 3.000000 6.000000 		; Translation max
-========
-;)Type      	1 				; 1: Default rot, 2: Turn with steer, 4: Translate with speed, 6: 2 and 4
-;)Trans     	0.000000 3.000000 6.000000 	; Translation max
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 ;)TransVel  	0.001000 			; Velocity factor
 }           	; End Spinner
 
@@ -498,40 +307,18 @@ AngVel      	0.000000
 AERIAL {    	; Start Aerial
 SecModelNum 	17
 TopModelNum 	18
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 Offset      	18.000000 -15.000000 -28.000000
 Direction   	0.000000 -1.000000 0.000000
 Length      	25.000000
-========
-Offset      	17.8 -17.4 -40.8
-Direction   	0.000000 -1.000000 0.000000
-Length      	20.000000
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 Stiffness   	2000.000000
 Damping     	5.500000
 }           	; End Aerial
 
 
 ;====================
-; Camera details
-;====================
-
-;)CAMATTACHED {	; Start Camera
-;)HoodOffset   	0.000000 0.000000 0.000000 	; Offset from model center
-;)HoodLook     	0.050000 			; Look angle (-0.25 to 0.25, 0.0 - straight ahead)
-;)RearOffset   	0.000000 0.000000 0.000000
-;)RearLook     	0.050000
-;)FixedOffset  	true 				; Is offset fixed or moving
-;)FixedLook    	true 				; Is look fixed or moving
-;)UseDefault   	true 				; Use default offsets (computed in game)
-;)}            	; End Camera
-
-
-;====================
 ; Car AI details
 ;====================
 
-<<<<<<<< HEAD:cars/fd35garrow/Parameters.txt
 AI {        	 ;Start AI
 UnderThresh 	150.000000
 UnderRange  	1500.000000
@@ -545,21 +332,6 @@ OverAccThresh  	668.683472
 OverAccRange   	400.000000
 PickupBias     	16383
 BlockBias      	16383
-========
-AI {        	; Start AI
-UnderThresh 	701.696838
-UnderRange  	1500.000000
-UnderFront  	809.173462
-UnderRear   	335.000000
-UnderMax    	0.698500
-OverThresh  	100.000000
-OverRange   	899.260010
-OverMax     	1.000000
-OverAccThresh  	549.966431
-OverAccRange   	400.000000
-PickupBias     	3276
-BlockBias      	3276
->>>>>>>> season-2025-superpro:cars/tcp_adren/parameters.txt
 OvertakeBias   	16383
 Suspension     	9830
 Aggression     	0
