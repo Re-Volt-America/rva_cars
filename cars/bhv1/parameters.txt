@@ -62,7 +62,7 @@ MaxRevs    	0.500000 			; Max Revs (for rev counter)
 SteerRate  	3.000000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	2.500000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	38.000000 			; Car's theoretical top speed (not including friction...)
+TopSpeed   	39.400000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	10.000000 			; Down force modifier when car on floor
 CoM        	0.000000 -25.000000 9.500000 		; Centre of mass relative to model centre
 Weapon     	0.000000 -20.000000 64.000000 		; Weapon genration offset
@@ -100,7 +100,7 @@ IsPresent   	TRUE
 IsPowered   	TRUE
 IsTurnable  	TRUE
 SteerRatio  	-0.250000
-EngineRatio 	15000.000000
+EngineRatio 	10000.000000
 Radius      	13.000000
 Mass        	0.250000
 Gravity     	2200.000000
@@ -121,7 +121,7 @@ IsPresent   	TRUE
 IsPowered   	TRUE
 IsTurnable  	TRUE
 SteerRatio  	-0.250000
-EngineRatio 	15000.000000
+EngineRatio 	10000.000000
 Radius      	13.000000
 Mass        	0.250000
 Gravity     	2200.000000
@@ -142,7 +142,7 @@ IsPresent   	TRUE
 IsPowered   	TRUE
 IsTurnable  	FALSE
 SteerRatio  	1.000000
-EngineRatio 	55000.000000
+EngineRatio 	50000.000000
 Radius      	13.000000
 Mass        	0.300000
 Gravity     	2200.000000
@@ -163,7 +163,7 @@ IsPresent   	TRUE
 IsPowered   	TRUE
 IsTurnable  	FALSE
 SteerRatio  	1.000000
-EngineRatio 	55000.000000
+EngineRatio 	50000.000000
 Radius      	13.000000
 Mass        	0.300000
 Gravity     	2200.000000

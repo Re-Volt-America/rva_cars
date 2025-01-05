@@ -323,7 +323,7 @@ AngVel      	0.000000
 AERIAL {    	; Start Aerial
 SecModelNum 	17
 TopModelNum 	18
-Offset      	0.000000 -68.000000 -36.500000
+Offset      	0.000000 -62.000000 -36.500000
 Direction   	0.000000 -1.000000 0.000000
 Length      	20.000000
 Stiffness   	2000.000000

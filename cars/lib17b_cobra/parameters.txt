@@ -9,6 +9,23 @@ Name       	"Cobra Max"
 
 
 ;====================
+; Stuff mainly for frontend display and car selectability
+;====================
+
+BestTime   	true
+Selectable 	true
+;)CPUSelectable	true
+;)Statistics 	true
+Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
+Obtain     	0 			; Obtain method
+Rating     	3 			; Skill level (rookie, amateur, ...)
+TopEnd     	3479.848145 		; Actual top speed (mph) for frontend bars
+Acc        	6.266821 		; Acceleration rating (empirical)
+Weight     	2.800000 		; Scaled weight (for frontend bars)
+Trans      	2 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
+MaxRevs    	0.300000 		; Max Revs (for rev counter, deprecated...)
+
+;====================
 ; Model Filenames
 ;====================
 
@@ -43,36 +60,35 @@ TPAGE 		"cars/lib17b_cobra/car.bmp"
 EnvRGB 		200 200 200
 
 ;====================
-; Stuff mainly for frontend display and car selectability
-;====================
-
-BestTime   	true
-Selectable 	true
-;)CPUSelectable	true
-;)Statistics 	true
-;)Flippable	false 		; Rotor car effect
-;)Flying   	false 		; Flying like the UFO car
-;)ClothFx  	false 		; Mystery car cloth effect
-Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
-Obtain     	0 			; Obtain method
-Rating     	3 			; Skill level (rookie, amateur, ...)
-TopEnd     	3473.310791 		; Actual top speed (mph) for frontend bars
-Acc        	7.592157 		; Acceleration rating (empirical)
-Weight     	2.800000 		; Scaled weight (for frontend bars)
-Trans      	2 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
-MaxRevs    	0.300000 		; Max Revs (for rev counter, deprecated...)
-
-;====================
 ; Handling related stuff
 ;====================
 
-SteerRate  	3.00000 			; Rate at which steer angle approaches value from input
+SteerRate  	3.800000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
-EngineRate 	4.500000 			; Rate at which Engine voltage approaches set value
-TopSpeed   	38.99999 			; Car's theoretical top speed (not including friction...)
+EngineRate 	4.800000 			; Rate at which Engine voltage approaches set value
+TopSpeed   	37.400002 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.000000 			; Down force modifier when car on floor
 CoM        	0.000000 0.000000 -8.000000 	; Centre of mass relative to model centre
-Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
+Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset (deprecated)
+;)WeaponOffset1	0.000000 -32.000000 64.000000 	; Offset for shockwaves and fireworks
+;)WeaponOffset2	0.000000 -16.000000 80.000000 	; Offset for water bombs
+;)Flippable	false 		; Rotor car effect
+;)Flying   	false 		; Flying like the UFO car
+;)ClothFx  	false 		; Mystery car cloth effect
+
+;====================
+; Camera details
+;====================
+
+;)CAMATTACHED {	; Start Camera
+;)HoodOffset   	0.000000 0.000000 0.000000 	; Offset from model center
+;)HoodLook     	0.050000 			; Look angle (-0.25 to 0.25, 0.0 - straight ahead)
+;)RearOffset   	0.000000 0.000000 0.000000
+;)RearLook     	0.050000
+;)FixedOffset  	true 				; Is offset fixed or moving
+;)FixedLook    	true 				; Is look fixed or moving
+;)UseDefault   	true 				; Use default offsets (computed in game)
+;)}            	; End Camera
 
 ;====================
 ; Car Body details
@@ -107,16 +123,16 @@ IsPresent   	true
 IsPowered   	false
 IsTurnable  	true
 SteerRatio  	-0.400000
-EngineRatio 	0.0000
+EngineRatio 	0.000000
 Radius      	14.500000
 Mass        	0.150000
 Gravity     	2200.000000
 MaxPos      	15.000000
 SkidWidth   	14.500000
 ToeIn       	0.000000
-;)Camber    	-5.00000
+;)Camber    	-5.000000
 AxleFriction    0.020000
-Grip            0.01200
+Grip            0.012000
 StaticFriction  1.880000
 KineticFriction 1.750000
 }          	; End Wheel
@@ -129,7 +145,7 @@ IsPresent   	true
 IsPowered   	false
 IsTurnable  	true
 SteerRatio  	-0.400000
-EngineRatio 	0.0000
+EngineRatio 	0.000000
 Radius      	14.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -138,7 +154,7 @@ SkidWidth   	14.500000
 ToeIn       	0.000000
 ;)Camber    	-5.000000
 AxleFriction    0.020000
-Grip            0.01200
+Grip            0.012000
 StaticFriction  1.880000
 KineticFriction 1.750000
 }          	; End Wheel
@@ -151,7 +167,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	1.000000
-EngineRatio 	49200.000000
+EngineRatio 	62200.000000
 Radius      	14.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -173,7 +189,7 @@ IsPresent   	true
 IsPowered   	true
 IsTurnable  	false
 SteerRatio  	1.000000
-EngineRatio 	49200.000000
+EngineRatio 	62200.000000
 Radius      	14.500000
 Mass        	0.150000
 Gravity     	2200.000000
@@ -197,7 +213,7 @@ ModelNum    	8
 Offset      	-19.340000 -16.670000 47.000000
 Length      	22.000000
 Stiffness   	400.000000
-Damping     	14.00000
+Damping     	10.000000
 Restitution 	-0.900000
 }           	; End Spring
 
@@ -206,7 +222,7 @@ ModelNum    	8
 Offset      	19.340000 -16.670000 47.000000
 Length      	22.000000
 Stiffness   	400.000000
-Damping     	14.00000
+Damping     	10.000000
 Restitution 	-0.900000
 }           	; End Spring
 
@@ -215,7 +231,7 @@ ModelNum    	8
 Offset      	-18.410000 -18.230000 -31.620003
 Length      	22.000000
 Stiffness   	400.000000
-Damping     	14.00000
+Damping     	10.000000
 Restitution 	-0.900000
 }           	; End Spring
 
@@ -224,7 +240,7 @@ ModelNum    	8
 Offset      	18.410000 -18.230000 -31.620003
 Length      	22.000000
 Stiffness   	400.000000
-Damping     	14.00000
+Damping     	10.000000
 Restitution 	-0.900000
 }           	; End Spring
 
@@ -316,19 +332,6 @@ Stiffness   	3000.000000
 Damping     	8.000000
 }           	; End Aerial
 
-;====================
-; Camera details
-;====================
-
-;)CAMATTACHED {	; Start Camera
-;)HoodOffset   	0.000000 0.000000 0.000000 	; Offset from model center
-;)HoodLook     	0.050000 			; Look angle (-0.25 to 0.25, 0.0 - straight ahead)
-;)RearOffset   	0.000000 0.000000 0.000000
-;)RearLook     	0.050000
-;)FixedOffset  	true 				; Is offset fixed or moving
-;)FixedLook    	true 				; Is look fixed or moving
-;)UseDefault   	true 				; Use default offsets (computed in game)
-;)}            	; End Camera
 
 ;====================
 ; Car AI details
