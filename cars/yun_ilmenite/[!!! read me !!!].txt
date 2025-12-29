@@ -16,3 +16,5 @@ Big thanks to all the RVA folks and to Burner94, stuff couldn't be done without 
 Parameters are not the same as the Event one, I retouched them a bit to make it more stable and have more racing pace with other Super Pros.
 
 Update 11/07/2024: Added Burner94's "Burnt Titanium" skin, the original concept we had for the car! I also re-did the parameters to actually meet the original vision of the car, which was a very heavy speedster car meant to survive everything, boasting professional looks and noticeable body roll.
+
+Update 29/12/2025: Final update, I buffed the car to the point it can compete amongst the class without falling behind. I was dissatisfied with the car, wasn't even playing it, and that I cannot live with. Consider it an end of the year gift? Thanks to all the people who actually download the cars I make, means a lot.

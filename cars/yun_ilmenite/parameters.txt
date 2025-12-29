@@ -21,8 +21,8 @@ Selectable 	true
 Class      	1 			; Engine type (0=Elec, 1=Glow, 2=Other)
 Obtain     	0 			; Obtain method
 Rating     	5 			; Skill level (rookie, amateur, ...)
-TopEnd     	4040.631348 		; Actual top speed (mph) for frontend bars
-Acc        	6.760049 		; Acceleration rating (empirical)
+TopEnd     	4156.711914 		; Actual top speed (mph) for frontend bars
+Acc        	5.279983 		; Acceleration rating (empirical)
 Weight     	3.500000 		; Scaled weight (for frontend bars)
 Trans      	0 			; Transmission type (0=4WD, 1=FWD, 2=RWD)
 MaxRevs    	0.500000 		; Max Revs (for rev counter, deprecated...)
@@ -61,12 +61,12 @@ EnvRGB 		200 200 200
 ; Handling related stuff
 ;====================
 
-SteerRate  	2.700000 			; Rate at which steer angle approaches value from input
+SteerRate  	2.440000 			; Rate at which steer angle approaches value from input
 SteerMod   	0.400000 			;
 EngineRate 	4.000000 			; Rate at which Engine voltage approaches set value
 TopSpeed   	42.900000 			; Car's theoretical top speed (not including friction...)
 DownForceMod	2.000000 			; Down force modifier when car on floor
-CoM        	0.000000 3.000000 2.660000 	; Centre of mass relative to model centre
+CoM        	0.000000 3.880000 2.220000 	; Centre of mass relative to model centre
 Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
 ;)Flippable	false 		; Rotor car effect
 ;)Flying   	false 		; Flying like the UFO car
@@ -92,11 +92,11 @@ Weapon     	0.000000 -32.000000 64.000000 	; Weapon generation offset
 
 BODY {		; Start Body
 ModelNum   	0 			; Model Number in above list
-Offset     	0.000000 0.000000 0.000000
+Offset     	0.000000 -1.660000 0.000000
 Mass       	3.500000
-Inertia    	4200.000000 0.000000 0.000000
-           	0.000000 6650.000000 0.000000
-           	0.000000 0.000000 3360.000000
+Inertia    	4100.000000 0.000000 0.000000
+           	0.000000 5800.000000 0.000000
+           	0.000000 0.000000 5000.000000
 Gravity    	2200 			; No longer used
 Hardness   	0.000000
 Resistance 	0.001000 		; Linear air resistance
@@ -113,7 +113,7 @@ KineticFriction 0.400000
 
 WHEEL 0 { 	; Start Wheel
 ModelNum 	1
-Offset1  	-28.500000 -4.000000 41.500000
+Offset1  	-28.500000 -4.500000 41.500000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   	true
 IsPowered   	false
@@ -123,19 +123,19 @@ EngineRatio 	0000.000000
 Radius      	11.000000
 Mass        	0.150000
 Gravity     	2200.000000
-MaxPos      	3.000000
+MaxPos      	4.100000
 SkidWidth   	13.500000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.025000
-Grip            0.02
-StaticFriction  2.13
-KineticFriction 2.04
+AxleFriction    	0.020000
+Grip            	0.020000
+StaticFriction  	2.110000
+KineticFriction 	2.010000
 }          	; End Wheel
 
 WHEEL 1 { 	; Start Wheel
 ModelNum 	2
-Offset1  	28.500000 -4.000000 41.500000
+Offset1  	28.500000 -4.500000 41.500000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   	true
 IsPowered   	false
@@ -145,19 +145,19 @@ EngineRatio 	0000.000000
 Radius      	11.000000
 Mass        	0.150000
 Gravity     	2200.000000
-MaxPos      	3.000000
+MaxPos      	4.100000
 SkidWidth   	13.500000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.025000
-Grip            0.02
-StaticFriction  2.13
-KineticFriction 2.04
+AxleFriction    	0.020000
+Grip            	0.020000
+StaticFriction  	2.110000
+KineticFriction 	2.010000
 }          	; End Wheel
 
 WHEEL 2 { 	; Start Wheel
 ModelNum 	3
-Offset1  	-31.500000 -4.000000 -48.500000
+Offset1  	-31.100000 -4.200000 -48.500000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   	true
 IsPowered   	true
@@ -167,19 +167,19 @@ EngineRatio 	93900.000000
 Radius      	11.000000
 Mass        	0.150000
 Gravity     	2200.000000
-MaxPos      	3.000000
+MaxPos      	4.500000
 SkidWidth   	13.500000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.050000
-Grip            0.021
-StaticFriction  2.15
-KineticFriction 2.07
+AxleFriction    	0.050000
+Grip            	0.021000
+StaticFriction  	2.150000
+KineticFriction 	2.070000
 }          	; End Wheel
 
 WHEEL 3 { 	; Start Wheel
 ModelNum 	4
-Offset1  	31.500000 -4.000000 -48.500000
+Offset1  	31.100000 -4.200000 -48.500000
 Offset2  	0.000000 0.000000 0.000000
 IsPresent   	true
 IsPowered   	true
@@ -189,14 +189,14 @@ EngineRatio 	93900.000000
 Radius      	11.000000
 Mass        	0.150000
 Gravity     	2200.000000
-MaxPos      	3.000000
+MaxPos      	4.500000
 SkidWidth   	13.500000
 ToeIn       	0.000000
 ;)Camber    	0.000000
-AxleFriction    0.050000
-Grip            0.021
-StaticFriction  2.15
-KineticFriction 2.07
+AxleFriction    	0.050000
+Grip            	0.021000
+StaticFriction  	2.150000
+KineticFriction 	2.070000
 }          	; End Wheel
 
 
@@ -208,36 +208,36 @@ SPRING 0 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	644.000000
-Damping     	12.000000
-Restitution 	-0.850000
+Stiffness   	580.000000
+Damping     	13.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 1 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	644.000000
-Damping     	12.000000
-Restitution 	-0.850000
+Stiffness   	580.000000
+Damping     	13.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 2 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	644.000000
-Damping     	12.000000
-Restitution 	-0.850000
+Stiffness   	610.000000
+Damping     	10.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 SPRING 3 { 	; Start Spring
 ModelNum    	-1
 Offset      	0.000000 0.000000 0.000000
 Length      	0.000000
-Stiffness   	644.000000
-Damping     	12.000000
-Restitution 	-0.850000
+Stiffness   	610.000000
+Damping     	10.000000
+Restitution 	-0.750000
 }           	; End Spring
 
 
@@ -333,21 +333,21 @@ Damping     	5.500000
 ; Car AI details
 ;====================
 
-AI {        	; Start AI
-UnderThresh 	701.696838
-UnderRange  	1500.000000
-UnderFront  	809.173462
-UnderRear   	335.000000
-UnderMax    	0.698500
-OverThresh  	100.000000
-OverRange   	899.260010
-OverMax     	1.000000
-OverAccThresh  	549.966431
-OverAccRange   	400.000000
-PickupBias     	3276
-BlockBias      	3276
+AI {        	 ;Start AI
+UnderThresh 	82.150002
+UnderRange  	3162.633545
+UnderFront	 	251.520004
+UnderRear   	1125.232666
+UnderMax    	0.271073
+OverThresh  	1704.070923
+OverRange   	1391.000000
+OverMax     	0.746230
+OverAccThresh  	113.930000
+OverAccRange   	2574.388916
+PickupBias     	16383
+BlockBias      	16383
 OvertakeBias   	16383
-Suspension     	0
+Suspension     	9830
 Aggression     	0
 }           	; End AI
 
