@@ -1,0 +1,215 @@
+{
+
+	Name       	"Penguin"
+
+	; (files)
+
+	MODEL 	0 		"cars\penguin\body.prm"
+	MODEL 	1 		"cars\penguin\wheel.prm"
+	MODEL 	2 		"cars\penguin\axle.prm"
+	MODEL 	3 		"cars\penguin\spring.prm"
+	MODEL 	4 		"cars\penguin\spinner.prm"
+	MODEL 	17 		"cars\misc\aerial.m"
+	MODEL 	18 		"cars\misc\aerialT.m"
+	TPAGE 			"cars\penguin\car.bmp"
+	COLL 			"cars\penguin\hull.hul"
+	;)TSHADOW 		"cars\penguin\shadow.bmp"
+	;)SHADOWTABLE 	-113 113 110 -120 -10
+	EnvRGB 			100 10 10
+
+	; (frontend)
+
+	BestTime   		true
+	Selectable 		true
+	;)CPUSelectable	true
+	;)Statistics 	true
+	Class      		1
+	Obtain     		0
+	Rating     		0
+	TopEnd     		2941.081787
+	Acc        		7.284750
+	Weight     		4
+	Trans      		0
+	MaxRevs    		0.5
+	;)TCARBOX  		"cars\penguin\carbox.bmp"
+
+	; (handling)
+
+	SteerRate  		2
+	SteerMod   		0.4
+	EngineRate 		10
+	TopSpeed   		35
+	DownForceMod	2
+	CoM        		0 10 0
+	Weapon     		0 -32 64
+
+	; (body)
+
+	BODY {
+		ModelNum   		0
+		Offset     		0 0 0
+		Mass       		4.0
+		Inertia    		9000 0 0
+						0 9300 0
+						0 0 700
+		Gravity    		2200
+		Hardness   		0
+		Resistance 		0.001
+		AngRes     		0.002
+		ResMod     		25
+		Grip       		0.01
+		StaticFriction 	0.8
+		KineticFriction 0.4
+	}
+
+	; (wheels)
+
+	WHEEL 0 - 3 {
+		ModelNum 		1
+		IsPresent   	true
+		IsPowered   	true
+		IsTurnable  	true
+		EngineRatio 	35000
+		Radius      	17
+		Mass        	0.45
+		Gravity     	2200
+		MaxPos      	11
+		SkidWidth   	15
+		ToeIn       	0
+		Grip            0.015
+		StaticFriction	1.5
+		KineticFriction 1.3
+	}
+
+	WHEEL 0 - 1 {
+		SteerRatio  	-0.1
+		AxleFriction    0.02
+	}
+
+	WHEEL 2 - 3 {
+		SteerRatio  	0.1
+		AxleFriction    0.05
+	}
+
+	WHEEL 0 {
+		Offset1  		-22 -10 26
+		Offset2  		0 0 0
+	}
+
+	WHEEL 1 {
+		Offset1  		22 -10 26
+		Offset2  		0 0 0
+	}
+
+	WHEEL 2 {
+		Offset1  		-22 -10 -40
+		Offset2  		0 0 0
+	}
+
+	WHEEL 3 {
+		Offset1  		22 -10 -40
+		Offset2  		0 0 0
+	}
+
+	; (springs)
+
+	SPRING 0 - 3 {
+		ModelNum    3
+		Length      20
+		Stiffness  	 	500
+		Damping     	9
+		Restitution 	-0.8
+	}
+
+	SPRING 0 {
+		Offset      -21 -38 26
+	}
+
+	SPRING 1 {
+		Offset      21 -38 26
+	}
+
+	SPRING 2 {
+		Offset      -21 -37.5 -40
+	}
+
+	SPRING 3 {
+		Offset      21 -37.5 -40
+	}
+
+	; (pins)
+
+	PIN 0 - 3 {
+		ModelNum    -1
+		Offset      0 0 0
+		Length      0
+	}
+
+	; (axles)
+
+	AXLE 0 - 3 {
+		ModelNum    2
+		Length      8
+	}
+
+	AXLE 0 {
+		Offset      -9 -15.5 26
+	}
+
+	AXLE 1 {
+		Offset      9 -15.5 26
+	}
+
+	AXLE 2 {
+		Offset      -9 -15.5 -40
+	}
+
+	AXLE 3 {
+		Offset      9 -15.5 -40
+	}
+
+	; (spinner)
+
+	SPINNER {
+		ModelNum    	4
+		Offset      	1 0 0
+		Axis        	0 0 1
+		AngVel      	0.2
+		;)Type      	6
+		;)Trans     	0.2 1.2 2
+		;)TransVel  	0.001
+	}
+
+	; (antenna)
+
+	AERIAL {
+		SecModelNum 	17
+		TopModelNum 	18
+		Offset      	-17 -35 -58
+		Direction   	0 -1 -0.2
+		Length      	25
+		Stiffness   	10000
+		Damping     	2.5
+	}
+
+	; (ai)
+
+	AI {
+		UnderThresh 	148.970001
+		UnderRange  	3645.320068
+		UnderFront  	450
+		UnderRear   	335
+		UnderMax    	0.950791
+		OverThresh  	1210.329956
+		OverRange   	1391
+		OverMax     	1
+		OverAccThresh  	170.079391
+		OverAccRange   	400
+		PickupBias     	16383
+		BlockBias      	16383
+		OvertakeBias   	16383
+		Suspension     	9830
+		Aggression     	0
+	}
+
+}
