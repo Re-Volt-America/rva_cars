@@ -1,0 +1,49 @@
+                    # # # # # # # # # # # # # # # # # # #
+                    #  _____________________ ________   #
+                    #  \_   _____/\____    //  _____/   #
+                    #   |    __)    /     //   \  ___   #
+                    #   |     \    /     /_\    \_\  \  #
+                    #   \___  /   /_______ \\______  /  #
+                    #       \/            \/       \/   #
+                    #				    	#
+                    # # # # # # # # # # # # # # # # # # #
+
+Car information
+__________________________________________________________________________
+Car name		: Mateater
+Car Type		: Remodel
+Top speed		: 40 Mph
+Rating/Class		: Semi-Pro
+Installed folder	: ...\cars\mateater
+Description		: Seventh try on remodelling BloodBTF's car, this time
+			  it's still the Hammerhead,but with 6x6 truggy setup.
+			  I borrowed Norfair's Cobra Max's springs & axles.
+
+			  Yes, it's based off of Black Widow Spider, because
+			  the big back and small front proportion.
+			  Named after Mateater because of course "Mate-Eater".
+			  =Black Widow females eat their partner after mating.
+Author Information
+__________________________________________________________________________
+Author Name 	: Fr13ndz0n3dguy
+Email Address   : fatahzahran@gmail.com
+
+Construction
+__________________________________________________________________________
+Base           	: BloodBTF's Hammerhead
+Editor(s) used 	: Blender, Autoshade, and Paint.net
+
+Additional Credits 
+__________________________________________________________________________
+-Thanks to the official community who continues to make Re-Volt a fun and 
+attractive game !
+-R6TE and Mightycucumber who taught me blender basics
+-Burner94 for teaching me how to make custom hull on blender
+-All good people responses on the lovely Discord community
+-All the updates of RVGL
+
+Copyright / Permissions
+__________________________________________________________________________
+You may do whatever you want with this car but you have to give us credits
+and give credit to the original author.
+Do not distribute without authorization.
