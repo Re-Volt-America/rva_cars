@@ -1,0 +1,43 @@
+                    # # # # # # # # # # # # # # # # # # #
+                    #  _____________________ ________   #
+                    #  \_   _____/\____    //  _____/   #
+                    #   |    __)    /     //   \  ___   #
+                    #   |     \    /     /_\    \_\  \  #
+                    #   \___  /   /_______ \\______  /  #
+                    #       \/            \/       \/   #
+                    #				    	#
+                    # # # # # # # # # # # # # # # # # # #
+
+Car information
+__________________________________________________________________________
+Car name		: Kindleberger
+Car Type		: Remodel of Oblitenitro
+Top speed		: 44 Mph
+Rating/Class		: Pro
+Installed folder	: ...\cars\kindleberger
+Description		: Predecessor of Oblitenitro. More on site.
+
+Author Information
+__________________________________________________________________________
+Author Name 	: Fr13ndz0n3dguy
+Email Address   : fatahzahran@gmail.com
+
+Construction
+__________________________________________________________________________
+Base           	: Oblitenitro
+Editor(s) used 	: Blender, Autoshade, and Paint.net
+
+Additional Credits 
+__________________________________________________________________________
+-Thanks to the official community who continues to make Re-Volt a fun and 
+attractive game !
+-R6TE and Mightycucumber who taught me blender basics
+-Burner94 for teaching me how to make custom hull on blender
+-All good people responses on the lovely Discord community
+-All the updates of RVGL
+
+Copyright / Permissions
+__________________________________________________________________________
+You may do whatever you want with this car but you have to give us credits
+and give credit to the original author.
+Do not distribute without authorization.
